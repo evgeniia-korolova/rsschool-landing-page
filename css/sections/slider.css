@@ -4,6 +4,7 @@
   background-color: var(--bg-secondary);
   border-radius: 16px;
   overflow: hidden;
+  margin-block: 20px;
 }
 
 .travel-slider__title {

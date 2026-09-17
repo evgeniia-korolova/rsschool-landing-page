@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Wanderlust — Authentic Travel Experiences</title>
@@ -9,124 +8,240 @@
     <link rel="stylesheet" href="./css/base.css" />
     <link rel="stylesheet" href="./css/sections/hero.css" />
     <link rel="stylesheet" href="./css/sections/slider.css" />
-</head>
+    <link rel="stylesheet" href="./css/sections/experiences.css" />
+  </head>
 
-<body>
+  <body>
     <section class="travel-hero">
-        <div class="travel-hero__container container">
-            <h1 class="travel-hero__title">
-                The world is too beautiful to stay at home
-            </h1>
-            <p class="travel-hero__subtitle">
-                <span>Discover authentic expeditions and hidden gems across the
-                    globe.</span>
-            </p>
-            <button class="travel-hero__btn">Explore Destinations</button>
-        </div>
+      <div class="travel-hero__container container">
+        <h1 class="travel-hero__title">
+          The world is too beautiful to stay at home
+        </h1>
+        <p class="travel-hero__subtitle">
+          <span
+            >Discover authentic expeditions and hidden gems across the
+            globe.</span
+          >
+        </p>
+        <button class="travel-hero__btn">Explore Destinations</button>
+      </div>
     </section>
 
     <section class="travel-slider">
-        <div class="travel-slider__container container">
-            <h2 class="travel-slider__title">Explore beautiful destinations</h2>
+      <div class="travel-slider__container container">
+        <h2 class="travel-slider__title">Explore beautiful destinations</h2>
 
-            <div class="travel-slider__content">
-                <div class="travel-slider__subtitle">
-
-                    <p class="travel-slider__subtitle-text">
-                        Our team has curated the most inspiring places around the world just
-                        for you.
-                    </p>
+        <div class="travel-slider__content">
+          <div class="travel-slider__subtitle">
+            <p class="travel-slider__subtitle-text">
+              Our team has curated the most inspiring places around the world
+              just for you.
+            </p>
+          </div>
+          <!-- Общий бокс для ленты и стрелок -->
+          <div class="travel-slider__wrapper">
+            <!-- Grid-лента со слайдами -->
+            <div class="travel-slider__track">
+              <div class="travel-slide travel-slide--active">
+                <div class="travel-slide__img-box">
+                  <img
+                    src="./assets/images/tropical-beach.jpg"
+                    alt="Tropical Beach"
+                    class="travel-slide__img" />
                 </div>
-                <!-- Общий бокс для ленты и стрелок -->
-                <div class="travel-slider__wrapper">
-                    <!-- Grid-лента со слайдами -->
-                    <div class="travel-slider__track">
-
-                        <div class="travel-slide travel-slide--active">
-                            <div class="travel-slide__img-box">
-                                <img src="./assets/images/tropical-beach.jpg" alt="Tropical Beach"
-                                    class="travel-slide__img" />
-                            </div>
-                            <div class="travel-slide__info">
-                                <span class="travel-slide__meta">01 — Relax</span>
-                                <h3 class="travel-slide__heading">Maldives Oasis</h3>
-                            </div>
-                        </div>
-
-
-                        <div class="travel-slide">
-                            <div class="travel-slide__img-box">
-                                <img src="./assets/images/mountain-peak.jpg" alt="Mountain Peak"
-                                    class="travel-slide__img" />
-                            </div>
-                            <div class="travel-slide__info">
-                                <span class="travel-slide__meta">02 — Adventure</span>
-                                <h3 class="travel-slide__heading">Mountain Challenge</h3>
-                            </div>
-                        </div>
-
-
-                        <div class="travel-slide">
-                            <div class="travel-slide__img-box">
-                                <img src="./assets/images/european-streets.avif" alt="European Streets"
-                                    class="travel-slide__img" />
-                            </div>
-                            <div class="travel-slide__info">
-                                <span class="travel-slide__meta">03 — Heritage</span>
-                                <h3 class="travel-slide__heading">European Streets</h3>
-                            </div>
-                        </div>
-
-                        <div class="travel-slide">
-                            <div class="travel-slide__img-box">
-                                <img src="./assets/images/iceland.jpg" alt="Icelandic Giants"
-                                    class="travel-slide__img" />
-                            </div>
-                            <div class="travel-slide__info">
-                                <span class="travel-slide__meta">04 — Wildlife</span>
-                                <h3 class="travel-slide__heading">Icelandic Giants</h3>
-                            </div>
-                        </div>
-                        <div class="travel-slide">
-                            <div class="travel-slide__img-box">
-                                <img src="./assets/images/asia.avif" alt="Asia" class="travel-slide__img" />
-                            </div>
-                            <div class="travel-slide__info">
-                                <span class="travel-slide__meta">05 — Culture</span>
-                                <h3 class="travel-slide__heading">Mystic Asia</h3>
-                            </div>
-                        </div>
-                        <div class="travel-slide">
-                            <div class="travel-slide__img-box">
-                                <img src="./assets/images/africa.avif" alt="African Safary" class="travel-slide__img" />
-                            </div>
-                            <div class="travel-slide__info">
-                                <span class="travel-slide__meta">06 — Safari</span>
-                                <h3 class="travel-slide__heading">African Wild</h3>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="travel-slider__controls">
-                        <button class="travel-slider__nav-btn travel-slider__nav-btn--prev" aria-label="Previous slide">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                <line x1="19" y1="12" x2="5" y2="12"></line>
-                                <polyline points="12 19 5 12 12 5"></polyline>
-                            </svg>
-                        </button>
-                        <button class="travel-slider__nav-btn travel-slider__nav-btn--next" aria-label="Next slide">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                <line x1="5" y1="12" x2="19" y2="12"></line>
-                                <polyline points="12 5 19 12 12 19"></polyline>
-                            </svg>
-                        </button>
-                    </div>
+                <div class="travel-slide__info">
+                  <span class="travel-slide__meta">01 — Relax</span>
+                  <h3 class="travel-slide__heading">Maldives Oasis</h3>
                 </div>
+              </div>
+
+              <div class="travel-slide">
+                <div class="travel-slide__img-box">
+                  <img
+                    src="./assets/images/mountain-peak.jpg"
+                    alt="Mountain Peak"
+                    class="travel-slide__img" />
+                </div>
+                <div class="travel-slide__info">
+                  <span class="travel-slide__meta">02 — Adventure</span>
+                  <h3 class="travel-slide__heading">Mountain Challenge</h3>
+                </div>
+              </div>
+
+              <div class="travel-slide">
+                <div class="travel-slide__img-box">
+                  <img
+                    src="./assets/images/european-streets.avif"
+                    alt="European Streets"
+                    class="travel-slide__img" />
+                </div>
+                <div class="travel-slide__info">
+                  <span class="travel-slide__meta">03 — Heritage</span>
+                  <h3 class="travel-slide__heading">European Streets</h3>
+                </div>
+              </div>
+
+              <div class="travel-slide">
+                <div class="travel-slide__img-box">
+                  <img
+                    src="./assets/images/iceland.jpg"
+                    alt="Icelandic Giants"
+                    class="travel-slide__img" />
+                </div>
+                <div class="travel-slide__info">
+                  <span class="travel-slide__meta">04 — Wildlife</span>
+                  <h3 class="travel-slide__heading">Icelandic Giants</h3>
+                </div>
+              </div>
+              <div class="travel-slide">
+                <div class="travel-slide__img-box">
+                  <img
+                    src="./assets/images/asia.avif"
+                    alt="Asia"
+                    class="travel-slide__img" />
+                </div>
+                <div class="travel-slide__info">
+                  <span class="travel-slide__meta">05 — Culture</span>
+                  <h3 class="travel-slide__heading">Mystic Asia</h3>
+                </div>
+              </div>
+              <div class="travel-slide">
+                <div class="travel-slide__img-box">
+                  <img
+                    src="./assets/images/africa.avif"
+                    alt="African Safary"
+                    class="travel-slide__img" />
+                </div>
+                <div class="travel-slide__info">
+                  <span class="travel-slide__meta">06 — Safari</span>
+                  <h3 class="travel-slide__heading">African Wild</h3>
+                </div>
+              </div>
             </div>
-        </div>
-    </section>
-</body>
 
+            <div class="travel-slider__controls">
+              <button
+                class="travel-slider__nav-btn travel-slider__nav-btn--prev"
+                aria-label="Previous slide">
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round">
+                  <line x1="19" y1="12" x2="5" y2="12"></line>
+                  <polyline points="12 19 5 12 12 5"></polyline>
+                </svg>
+              </button>
+              <button
+                class="travel-slider__nav-btn travel-slider__nav-btn--next"
+                aria-label="Next slide">
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round">
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                  <polyline points="12 5 19 12 12 19"></polyline>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="experiences">
+      <div class="container experiences__container">
+        <div class="experiences__content">
+          <span class="experiences__subtitle">What We Do</span>
+          <h2 class="experiences__title">
+            Curated Experiences Tailored for You
+          </h2>
+          <p class="experiences__description">
+            We believe that travel should be deeply personal. Whether you are
+            looking for the vibrant energy of shared discoveries or the quiet
+            luxury of a bespoke itinerary.
+          </p>
+
+          <div class="experiences__services">
+            <div class="service-card">
+              <div class="service-card__icon">👥</div>
+              <div class="service-card__info">
+                <h3 class="service-card__title">Group Expeditions</h3>
+                <p class="service-card__text">
+                  Join like-minded global travelers. Small groups focused on
+                  cultural immersion.
+                </p>
+              </div>
+            </div>
+
+            <div class="service-card">
+              <div class="service-card__icon">✨</div>
+              <div class="service-card__info">
+                <h3 class="service-card__title">Private Tailormade Tours</h3>
+                <p class="service-card__text">
+                  Your pace, your rules. Fully customized itineraries crafted by
+                  local insiders.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="experiences__gallery">
+          <div class="experiences__grid">
+            <div class="experiences__item experiences__item--1">
+              <img
+                src="./assets/images/collage/friends-sitting-bonfire.avif"
+                alt="Group expedition"
+                class="experiences__img" />
+            </div>
+
+            <div class="experiences__item experiences__item--2">
+              <img
+                src="./assets/images/collage/street-cafe.avif"
+                alt="European streets"
+                class="experiences__img" />
+            </div>
+
+            <div class="experiences__item experiences__item--6">
+              <img
+                src="./assets/images/collage/spices-market.webp"
+                alt="Local flavor and food"
+                class="experiences__img" />
+            </div>
+
+            <div class="experiences__item experiences__item--3">
+              <img
+                src="./assets/images/collage/man-on-the-peek.webp"
+                alt="Icelandic giants"
+                class="experiences__img" />
+            </div>
+
+            <div class="experiences__item experiences__item--4">
+              <img
+                src="./assets/images/collage/cathedral.webp"
+                alt="Travel details"
+                class="experiences__img" />
+            </div>
+
+            <div class="experiences__item experiences__item--5">
+              <img
+                src="./assets/images/collage/tropical-paradise.jpg"
+                alt="Mystic Asia beach"
+                class="experiences__img" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
 </html>
