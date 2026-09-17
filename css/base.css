@@ -1,0 +1,60 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+
+  background-color: var(--bg-body);
+  color: var(--color-main);
+  transition: background-color 0.3s ease, color 0.3s ease;
+
+  
+  padding-left: 80px;
+  padding-right: 80px;
+}
+
+
+@media (max-width: 1024px) {
+  body {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
+
+
+@media (max-width: 480px) {
+  body {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  display: inline-block;
+}
+
+button {
+  cursor: pointer;
+  font: inherit;
+  background: none;
+  border: none;
+  color: inherit;
+}
