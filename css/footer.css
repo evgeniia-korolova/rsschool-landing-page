@@ -2,12 +2,10 @@ footer {
   padding: clamp(1.25rem, 0.833rem + 1.852vw, 2.5rem) 40px 30px 40px;
   background-color: var(--bg-accent, #1a1a1a);
   color: var(--color-white, #ffffff);
-  border-top: 1px solid rgba(255, 255, 255, 0.05);
+  border-top: 1px solid rgba(255, 255, 255, 0.05);  
 }
 
-.container-footer {
-  max-width: 1440px;
-  margin: 0 auto;
+.container-footer {  
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -72,7 +70,7 @@ footer {
 
 @media (width <= 480px) {
   footer {
-    padding: 35px 0 20px 0;
+    padding: 20px 0;
   }
 
   .rss-logo-js {

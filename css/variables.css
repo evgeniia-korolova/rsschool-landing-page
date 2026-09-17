@@ -33,6 +33,7 @@
   --color-main: #1e293b;
   --color-secondary: #64748b;
   --color-light: #ffffff;
+  --color-muted: #fcf6f6;
   --color-text-dark: #2d2d2d;
 
   /* Accent */
@@ -40,18 +41,19 @@
   --color-accent-hover: #115e59;
 }
 
-body.dark-theme {
+[data-theme="dark"] {
   /* --- DARK THEME --- */
   /* Backgrounds */
   --bg-body: #0f172a;
   --bg-main: #1e293b;
   --bg-secondary: #334155;
-  --bg-accent: #f7f4ef;
+  --bg-accent: #1e293b;
 
   /* Text Colors */
   --color-main: #f8fafc;
   --color-secondary: #94a3b8;
   --color-light: #ffffff;
+  --color-muted: #fcf6f6;
   --color-text-dark: #2d2d2d;
 
   /* Accent */
