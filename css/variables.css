@@ -24,13 +24,14 @@
   --container-padding: 20px;
   /* --- LIGHT THEME (Default) --- */
   /* Backgrounds */
-  --bg-body: #f8fafc;
+  --bg-body: #fbf3ec;
   --bg-main: #ffffff;
   --bg-secondary: #f1f5f9;
 
   /* Text Colors */
   --color-main: #1e293b;
   --color-secondary: #64748b;
+  --color-light: #ffffff;
 
   /* Accent */
   --color-accent: #0f766e;
@@ -47,9 +48,10 @@ body.dark-theme {
   /* Text Colors */
   --color-main: #f8fafc;
   --color-secondary: #94a3b8;
+  --color-light: #ffffff;
 
   /* Accent */
-  --color-accent: #2dd4bf;
+  --color-accent: #046009;
   --color-accent-hover: #2dd4bfcc;
 }
 
