@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="./css/variables.css" />
     <link rel="stylesheet" href="./css/base.css" />
     <link rel="stylesheet" href="./css/sections/hero.css" />
+    <link rel="stylesheet" href="./css/sections/slider.css" />
 </head>
 
 <body>
@@ -21,6 +22,109 @@
                     globe.</span>
             </p>
             <button class="travel-hero__btn">Explore Destinations</button>
+        </div>
+    </section>
+
+    <section class="travel-slider">
+        <div class="travel-slider__container container">
+            <h2 class="travel-slider__title">Explore beautiful destinations</h2>
+
+            <div class="travel-slider__content">
+                <div class="travel-slider__subtitle">
+
+                    <p class="travel-slider__subtitle-text">
+                        Our team has curated the most inspiring places around the world just
+                        for you.
+                    </p>
+                </div>
+                <!-- Общий бокс для ленты и стрелок -->
+                <div class="travel-slider__wrapper">
+                    <!-- Grid-лента со слайдами -->
+                    <div class="travel-slider__track">
+
+                        <div class="travel-slide travel-slide--active">
+                            <div class="travel-slide__img-box">
+                                <img src="./assets/images/tropical-beach.jpg" alt="Tropical Beach"
+                                    class="travel-slide__img" />
+                            </div>
+                            <div class="travel-slide__info">
+                                <span class="travel-slide__meta">01 — Relax</span>
+                                <h3 class="travel-slide__heading">Maldives Oasis</h3>
+                            </div>
+                        </div>
+
+
+                        <div class="travel-slide">
+                            <div class="travel-slide__img-box">
+                                <img src="./assets/images/mountain-peak.jpg" alt="Mountain Peak"
+                                    class="travel-slide__img" />
+                            </div>
+                            <div class="travel-slide__info">
+                                <span class="travel-slide__meta">02 — Adventure</span>
+                                <h3 class="travel-slide__heading">Mountain Challenge</h3>
+                            </div>
+                        </div>
+
+
+                        <div class="travel-slide">
+                            <div class="travel-slide__img-box">
+                                <img src="./assets/images/european-streets.avif" alt="European Streets"
+                                    class="travel-slide__img" />
+                            </div>
+                            <div class="travel-slide__info">
+                                <span class="travel-slide__meta">03 — Heritage</span>
+                                <h3 class="travel-slide__heading">European Streets</h3>
+                            </div>
+                        </div>
+
+                        <div class="travel-slide">
+                            <div class="travel-slide__img-box">
+                                <img src="./assets/images/iceland.jpg" alt="Icelandic Giants"
+                                    class="travel-slide__img" />
+                            </div>
+                            <div class="travel-slide__info">
+                                <span class="travel-slide__meta">04 — Wildlife</span>
+                                <h3 class="travel-slide__heading">Icelandic Giants</h3>
+                            </div>
+                        </div>
+                        <div class="travel-slide">
+                            <div class="travel-slide__img-box">
+                                <img src="./assets/images/asia.avif" alt="Asia" class="travel-slide__img" />
+                            </div>
+                            <div class="travel-slide__info">
+                                <span class="travel-slide__meta">05 — Culture</span>
+                                <h3 class="travel-slide__heading">Mystic Asia</h3>
+                            </div>
+                        </div>
+                        <div class="travel-slide">
+                            <div class="travel-slide__img-box">
+                                <img src="./assets/images/africa.avif" alt="African Safary" class="travel-slide__img" />
+                            </div>
+                            <div class="travel-slide__info">
+                                <span class="travel-slide__meta">06 — Safari</span>
+                                <h3 class="travel-slide__heading">African Wild</h3>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="travel-slider__controls">
+                        <button class="travel-slider__nav-btn travel-slider__nav-btn--prev" aria-label="Previous slide">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <line x1="19" y1="12" x2="5" y2="12"></line>
+                                <polyline points="12 19 5 12 12 5"></polyline>
+                            </svg>
+                        </button>
+                        <button class="travel-slider__nav-btn travel-slider__nav-btn--next" aria-label="Next slide">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <line x1="5" y1="12" x2="19" y2="12"></line>
+                                <polyline points="12 5 19 12 12 19"></polyline>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 </body>
