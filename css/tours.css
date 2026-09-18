@@ -1,0 +1,71 @@
+.tours-page {  
+  padding-top: clamp(4.375rem, 3.75rem + 2.778vw, 6.25rem); 
+  background-color: var(--bg-main);
+}
+
+.tours-intro {
+  padding: 70px 0 30px 0;
+}
+
+
+.tours-filter-wrapper {
+  position: sticky;
+  
+  top: clamp(4.375rem, 3.75rem + 2.778vw, 6.25rem); 
+  z-index: 900; 
+  
+  
+  background-color: var(--bg-accent); 
+  padding: 15px 0;  
+  
+  border-bottom: 1px solid var(--bg-secondary);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  
+  margin-bottom: 40px;
+}
+
+/* флекс-контейнер для кнопок */
+.tours-filter {
+  display: flex;
+  justify-content: flex-start; 
+  flex-wrap: wrap;
+  gap: 12px;    
+  padding-bottom: 5px;  
+  
+}
+
+
+.filter-btn {
+  padding: 10px 22px;
+  border-radius: 30px;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  background-color: var(--bg-secondary);
+  color: var(--color-secondary);
+  font-weight: 500;
+  cursor: pointer;
+  white-space: nowrap; 
+  transition: all 0.25s ease;
+}
+
+.filter-btn--active {
+  background-color: var(--color-accent); 
+  color: var(--color-light); 
+}
+
+/* ==========================================================================
+   HOVER EFFECTS (Только для устройств с мышкой)
+   ========================================================================== */
+@media (hover: hover) {
+  /* Ховер на обычную (неактивную) кнопку */
+  .filter-btn:not(.filter-btn--active):hover {
+    background-color: var(--bg-body); 
+    color: var(--color-main);
+  }
+
+  /* Ховер на активную кнопку */
+  .filter-btn--active:hover {
+    background-color: var(--color-accent-hover); 
+    color: var(--color-light);
+  }
+}

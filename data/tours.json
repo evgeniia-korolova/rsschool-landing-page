@@ -1,0 +1,84 @@
+[
+  {
+    "id": "tour-beach-1",
+    "category": "beach",
+    "title": "Mystic Lagoon Resort",
+    "shortDescription": "Luxury eco-resort hidden in a private tropical bay.",
+    "longDescription": "Escape to a secluded paradise surrounded by crystal-clear waters and lush rainforest. This tour offers ultimate relaxation with private villa accommodations, wellness treatments, and pristine white-sand beaches right at your doorstep.",
+    "image": "https://unsplash.com/photos/sailboat-and-rocky-island-at-beach-eoJ8Y8eA4vc",
+    "rating": 4.9,
+    "durationText": "8 Days / 7 Nights",
+    "durationNights": 7,
+    "basePricePerNight": 120,
+    "transferPricePerPerson": 25,
+    "excursions": [
+      {"id": "exc-1", "name": "Coral Reef Snorkeling", "price": 45},
+      {"id": "exc-2", "name": "Sunset Catamaran Cruise", "price": 70}
+    ]
+  },
+  {
+    "id": "tour-sight-1",
+    "category": "sightseeing",
+    "title": "Ancient Kyoto Shrines",
+    "shortDescription": "Immersive cultural journey through Japan's historic capital.",
+    "longDescription": "Walk down the historic streets of Kyoto, visit iconic golden pavilions, and experience authentic tea ceremonies. Perfect for travelers seeking deep cultural insights, architectural marvels, and photography spots.",
+    "image": "https://unsplash.com/photos/a-large-white-building-with-a-red-roof-gmOMKy9oXj8",
+    "rating": 4.8,
+    "durationText": "6 Days / 5 Nights",
+    "durationNights": 5,
+    "basePricePerNight": 95,
+    "transferPricePerPerson": 15,
+    "excursions": [
+      {"id": "exc-3", "name": "Geisha District Evening Tour", "price": 60},
+      {"id": "exc-4", "name": "Bamboo Forest Sunrise Hike", "price": 35}
+    ]
+  },
+  {
+    "id": "tour-cruise-1",
+    "category": "cruise",
+    "title": "Mediterranean Wonders",
+    "shortDescription": "7-day luxury cruise stopping at Italy, France, and Spain.",
+    "longDescription": "Sail in style aboard a modern boutique cruise ship. Wake up in a new European city every morning, enjoy world-class dining on board, and take curated shore excursions in Rome, Monaco, and Barcelona.",
+    "image": "https://unsplash.com/photos/person-in-yellow-jacket-observes-icebergs-in-glacial-lagoon-WLjDfx2FPs4",
+    "rating": 5.0,
+    "durationText": "7 Days / 6 Nights",
+    "durationNights": 6,
+    "basePricePerNight": 180,
+    "transferPricePerPerson": 40,
+    "excursions": []
+  },
+  {
+    "id": "tour-exotic-1",
+    "category": "exotic",
+    "title": "Serengeti Wild Safari",
+    "shortDescription": "Unforgettable wildlife expedition in the heart of Tanzania.",
+    "longDescription": "Witness the Great Migration firsthand. Stay in luxury tented camps, embark on daily 4x4 game drives guided by local Maasai experts, and fall asleep to the raw sounds of the African savannah.",
+    "image": "https://unsplash.com/photos/steep-mountain-ridge-with-stairs-piercing-clouds-ggFBn5NPoRw",
+    "rating": 5.0,
+    "durationText": "7 Days / 6 Nights",
+    "durationNights": 6,
+    "basePricePerNight": 210,
+    "transferPricePerPerson": 55,
+    "excursions": [
+      {"id": "exc-5", "name": "Hot Air Balloon Sunrise Flight", "price": 150},
+      {"id": "exc-6", "name": "Night Game Drive with Tracker", "price": 85}
+    ]
+  },
+  {
+    "id": "tour-exotic-2",
+    "category": "exotic",
+    "title": "Patagonia Peak Trekking",
+    "shortDescription": "Challenging mountain route around Mount Fitz Roy.",
+    "longDescription": "A dream journey for mountain lovers. Hike through breathtaking glacial valleys, drink pure water from mountain streams, and marvel at the granite towers of Argentine Patagonia.",
+    "image": "https://unsplash.com/photos/a-very-tall-tree-with-lots-of-branches-RV6BnsYakc8",
+    "rating": 4.9,
+    "durationText": "9 Days / 7 Nights",
+    "durationNights": 8,
+    "basePricePerNight": 85,
+    "transferPricePerPerson": 35,
+    "excursions": [
+      {"id": "exc-7", "name": "Ice Trekking on Perito Moreno Glacier", "price": 110},
+      {"id": "exc-8", "name": "Professional Mountain Gear Rental", "price": 40}
+    ]
+  }
+]
