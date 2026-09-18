@@ -1,0 +1,71 @@
+/* ==========================================================================
+   BREAKPOINTS (Шпаргалка для @media согласно ТЗ от 1440px до 380px)
+   - Desktop (Large): 1440px (Базовый макет)
+   - Desktop (Small) / Laptop: 1200px
+   - Tablet (Horizontal): 1024px
+   - Tablet (Vertical): 768px
+   - Mobile (Large): 480px
+   - Mobile (Small): 380px (Минимальная ширина по ТЗ)
+   ========================================================================== */
+
+/* ==========================================================================
+   THEME VARIABLES
+   ========================================================================== */
+
+:root {
+  /* --- LAYOUT LAYERS & WIDTHS --- */
+  
+  --desktop-width: 1440px; 
+  --laptop-width: 1200px;
+  --tablet-width: 1024px;
+  --mobile-width: 480px;
+
+  
+  --container-padding: 20px;
+  /* --- LIGHT THEME (Default) --- */
+  /* Backgrounds */
+  --bg-body: #f8f7f6;
+  --bg-main: #ffffff;
+  --bg-secondary: #f7f4ef;
+  --bg-accent: #1e293b;
+
+  /* Text Colors */
+  --color-main: #1e293b;
+  --color-secondary: #64748b;
+  --color-light: #ffffff;
+  --color-muted: #fcf6f6;
+  --color-text-dark: #2d2d2d;
+
+  /* Accent */
+  --color-accent: #0f766e;
+  --color-accent-hover: #115e59;
+}
+
+[data-theme="dark"] {
+  /* --- DARK THEME --- */
+  /* Backgrounds */
+  --bg-body: #0f172a;
+  --bg-main: #1e293b;
+  --bg-secondary: #334155;
+  --bg-accent: #1e293b;
+
+  /* Text Colors */
+  --color-main: #f8fafc;
+  --color-secondary: #94a3b8;
+  --color-light: #ffffff;
+  --color-muted: #fcf6f6;
+  --color-text-dark: #2d2d2d;
+
+  /* Accent */
+  --color-accent: #38ec41;
+  --color-accent-hover: #2dd4bfcc;
+}
+
+/* ==========================================================================
+     BASE RESET 
+     ========================================================================== */
+body {
+  background-color: var(--bg-body);
+  color: var(--color-main);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
