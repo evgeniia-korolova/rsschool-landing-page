@@ -64,6 +64,11 @@
   color: var(--color-accent);
 }
 
+.menu-active {
+	opacity: 1;
+	visibility: visible;
+	transform: translateX(0);
+}
 
 .header__menu-list {
   display: flex;
@@ -114,6 +119,58 @@
   display: none;
 }
 
+.ham {
+	cursor: pointer;
+	-webkit-tap-highlight-color: transparent;
+	transition: transform 400ms;
+	-moz-user-select: none;
+	-webkit-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+  fill: var(--color-light);
+  stroke: var(--color-light);
+}
+
+.line {
+	fill: none;
+	transition:
+		stroke-dasharray 400ms,
+		stroke-dashoffset 400ms;
+	stroke: var(--branding-color);
+	stroke-width: 5.5;
+	stroke-linecap: round;
+}
+
+.hamRotate.active-ham {
+	transform: rotate(45deg);
+}
+
+.ham .top {
+	stroke-dasharray: 40 160;
+}
+.ham .middle {
+	stroke-dasharray: 40 142;
+	transform-origin: 50%;
+	transition: transform 400ms;
+}
+.ham .bottom {
+	stroke-dasharray: 40 85;
+	transform-origin: 50%;
+	transition:
+		transform 400ms,
+		stroke-dashoffset 400ms;
+}
+.ham.active-ham .top {
+	stroke-dashoffset: -64px;
+}
+.ham.active-ham .middle {
+	transform: rotate(90deg);
+}
+
+.ham.active-ham .bottom {
+	stroke-dashoffset: -64px;
+}
+
 .theme-toggle {
   background: transparent;
   border: none;
@@ -157,8 +214,6 @@
   display: block;
 }
 
-/* .theme-toggle__icon--sun { display: block; }
-.theme-toggle__icon--moon { display: none; } */
 
 @media (max-width: 768px) {
   .burger-btn {
@@ -177,6 +232,49 @@
   .header__menu-link {
     font-size: 1.25rem;
   }
+
+  .header__nav {
+		position: fixed;
+		top: 106px;
+		right: 0;
+		width: 100%;
+		height: calc(100vh - 106px);
+		background: var(--body-bg);
+		z-index: 100;
+		padding-top: 2rem;
+
+		opacity: 0;
+		visibility: hidden;
+		transform: translateX(100%);
+		transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+	}
+
+	.menu-open {
+		opacity: 1;
+		visibility: visible;
+		transform: translateX(0);
+	}
+
+	.menu-list {
+		flex-direction: column;
+		align-items: center;
+		width: 100%;
+	}
+
+	
+
+	
+
+	
+
+	.header-actions {
+		gap: 0.5rem;
+	}
+
+	.burger-btn,
+	.theme-toggle {
+		padding: 8px 0;
+	}
 }
 
 
