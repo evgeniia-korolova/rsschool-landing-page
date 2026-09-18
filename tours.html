@@ -90,11 +90,19 @@
       <nav class="tours-filter-wrapper">
         <div class="container">
           <div class="tours-filter">
-            <button class="filter-btn filter-btn--active" data-category="all">All Packages</button>
-            <button class="filter-btn" data-category="beach">Beach Resorts</button>
-            <button class="filter-btn" data-category="sightseeing">Sightseeing</button>
-            <button class="filter-btn" data-category="exotic">Exotic Adventures</button>
-            <button class="filter-btn" data-category="cruise">Cruises</button>
+            <button class="tours-filter__toggle" aria-expanded="false" aria-controls="filter-links">
+              <span>Filter By Category</span>
+              <svg class="tours-filter__chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <path d="M6 9l6 6 6-6"/>
+              </svg>
+            </button>
+            <div class="tours-filter__body" id="filter-links">
+              <button class="filter-btn filter-btn--active" data-category="all">All Packages</button>
+              <button class="filter-btn" data-category="beach">Beach Resorts</button>
+              <button class="filter-btn" data-category="sightseeing">Sightseeing</button>
+              <button class="filter-btn" data-category="exotic">Exotic Adventures</button>
+              <button class="filter-btn" data-category="cruise">Cruises</button>
+            </div>
           </div>
         </div>
       </nav>
