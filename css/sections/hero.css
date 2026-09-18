@@ -1,114 +1,116 @@
 .travel-hero {
-    position: relative;
-    width: 100%;
-    min-height: 75vh; 
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    border-radius: 16px;
-    overflow: hidden;
-    margin-block: 20px;
-    margin-top: clamp(70px, 8vh, 100px);
-  
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
-                      url('../../assets/images/hero-banner.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    margin-bottom: 1rem;
-  }
-  
-  .travel-hero__container {
-    max-width: 950px;
-    padding: 0 20px;
-    color: var(--color-light);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }  
-  
-  .travel-hero__title {
-    font-size: clamp(1.75rem, 2.083rem + -0.37vw, 2rem);
-    font-weight: 700;
-    line-height: 1.2;
-    margin-bottom: 25px;
-  }
-  
-  
-  .travel-hero__subtitle {
-    font-size: clamp(0.95rem, 0.808rem + 0.63vw, 1.4rem); 
-    font-weight: 400;
-    margin-bottom: 35px;
-    display: inline-block;
-    
-  }
-  
-  .travel-hero__subtitle span {
-    display: block;
-    white-space: nowrap;     
-    overflow: hidden;        
-    border-right: 3px solid transparent; 
-    width: 0;                
-    
-    
-    animation: typingSub 3s steps(64) forwards, 
-               blinkCaret 0.75s step-end 4;
-  }
-  
-  
-  .travel-hero__btn {
-    background-color: var(--color-accent);
-    color: #ffffff;
-    padding: 16px 36px;
-    font-size: 1.1rem;
-    font-weight: 600;
-    border-radius: 8px;
-    transition: background-color 0.3s ease, transform 0.2s ease;
-    display: inline-block;
-  }
-  
+  position: relative;
+  width: 100%;
+  min-height: 75vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border-radius: 16px;
+  overflow: hidden;
+  margin-block: 20px;
+  margin-top: clamp(70px, 8vh, 100px);
+
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url('../../assets/images/hero-banner.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-bottom: 1rem;
+}
+
+.travel-hero__container {
+  max-width: 950px;
+  padding: 0 20px;
+  color: var(--color-light);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.travel-hero__title {
+  font-size: clamp(1.75rem, 2.083rem + -0.37vw, 2rem);
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 25px;
+}
+
+.travel-hero__subtitle {
+  font-size: clamp(0.95rem, 0.808rem + 0.63vw, 1.4rem);
+  font-weight: 400;
+  margin-bottom: 35px;
+  display: inline-block;
+}
+
+.travel-hero__subtitle span {
+  display: block;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid transparent;
+  width: 0;
+
+  animation: typingSub 3s steps(64) forwards, blinkCaret 0.75s step-end 4;
+}
+
+.travel-hero__btn {
+  background-color: var(--color-accent);
+  color: #ffffff;
+  padding: 16px 36px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  border-radius: 8px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  display: inline-block;
+}
+
+@media (hover: hover) {
   .travel-hero__btn:hover {
     background-color: var(--color-accent-hover);
     transform: translateY(-2px);
   }
-  
-  .travel-hero__btn:active {
-    transform: translateY(0);
-  }
-  
-  /* ==========================================================================
-     KEYFRAMES
-     ========================================================================== */
-  
-  
-  @keyframes typingSub {
-    from { width: 0; }
-    to { width: 100%; border-right: none; } 
-  }
-  
-  
-  @keyframes blinkCaret {
-    from, to { border-right-color: transparent }
-    50% { border-right-color: var(--color-accent); }
-  }
+}
 
-  @keyframes slideInRight {
-    from {
-      opacity: 0;
-      transform: translateX(-20px); 
-    }
-    to {
-      opacity: 1;
-      transform: translateX(0);    
-    }
-  }
+.travel-hero__btn:active {
+  transform: translateY(0);
+}
 
-  @media (width <= 600px) {
-    .travel-hero__subtitle span {
-      white-space: normal;       
-      width: 100%;               
-      border-right: none;      
-      animation: slideInRight 1s ease-out forwards; 
-    }
+
+@keyframes typingSub {
+  from {
+    width: 0;
   }
+  to {
+    width: 100%;
+    border-right: none;
+  }
+}
+
+@keyframes blinkCaret {
+  from,
+  to {
+    border-right-color: transparent;
+  }
+  50% {
+    border-right-color: var(--color-accent);
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@media (width <= 600px) {
+  .travel-hero__subtitle span {
+    white-space: normal;
+    width: 100%;
+    border-right: none;
+    animation: slideInRight 1s ease-out forwards;
+  }
+}

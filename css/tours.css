@@ -49,17 +49,14 @@
   color: var(--color-light);
 }
 
-/* ==========================================================================
-   HOVER EFFECTS (Только для устройств с мышкой)
-   ========================================================================== */
 @media (hover: hover) {
-  /* Ховер на обычную (неактивную) кнопку */
+  
   .filter-btn:not(.filter-btn--active):hover {
     background-color: var(--bg-body);
     color: var(--color-main);
   }
 
-  /* Ховер на активную кнопку */
+  
   .filter-btn--active:hover {
     background-color: var(--color-accent-hover);
     color: var(--color-light);

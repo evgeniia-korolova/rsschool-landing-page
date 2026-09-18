@@ -2,10 +2,10 @@ footer {
   padding: clamp(1.25rem, 0.833rem + 1.852vw, 2.5rem) 40px 30px 40px;
   background-color: var(--bg-accent, #1a1a1a);
   color: var(--color-white, #ffffff);
-  border-top: 1px solid rgba(255, 255, 255, 0.05);  
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
 }
 
-.container-footer {  
+.container-footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -24,9 +24,11 @@ footer {
   display: inline-block;
 }
 
-.git-link a:hover {
-  color: var(--color-accent, #ff6b6b);
-  transform: translateY(-2px);
+@media (hover: hover) {
+  .git-link a:hover {
+    color: var(--color-accent, #ff6b6b);
+    transform: translateY(-2px);
+  }
 }
 
 .rss-logo-js {
@@ -47,8 +49,10 @@ footer {
   fill: #000000;
 }
 
-.course-link a:hover .rss-text {
-  fill: var(--color-accent, #ff6b6b);
+@media (hover: hover) {
+  .course-link a:hover .rss-text {
+    fill: var(--color-accent, #ff6b6b);
+  }
 }
 
 .author {

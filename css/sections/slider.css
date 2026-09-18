@@ -127,10 +127,12 @@
   transition: stroke 0.3s ease;
 }
 
-.travel-slider__nav-btn:hover {
-  background-color: var(--color-accent);
-  color: var(--color-light);
-  transform: scale(1.05);
+@media (hover: hover) {
+  .travel-slider__nav-btn:hover {
+    background-color: var(--color-accent);
+    color: var(--color-light);
+    transform: scale(1.05);
+  }
 }
 
 .travel-slider__nav-btn:active {
