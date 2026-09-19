@@ -13,14 +13,17 @@
    ========================================================================== */
 
 :root {
+  /* FONTS */
+  --font-main: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI',
+    Roboto, sans-serif;
+  --font-heading: 'Montserrat', sans-serif;
   /* --- LAYOUT LAYERS & WIDTHS --- */
-  
-  --desktop-width: 1440px; 
+
+  --desktop-width: 1440px;
   --laptop-width: 1200px;
   --tablet-width: 1024px;
   --mobile-width: 480px;
 
-  
   --container-padding: 20px;
   /* --- LIGHT THEME (Default) --- */
   /* Backgrounds */
@@ -41,7 +44,7 @@
   --color-accent-hover: #115e59;
 }
 
-[data-theme="dark"] {
+[data-theme='dark'] {
   /* --- DARK THEME --- */
   /* Backgrounds */
   --bg-body: #0f172a;
