@@ -12,6 +12,12 @@
     <link rel="stylesheet" href="./css/tours.css">
     <link rel="stylesheet" href="./css/footer.css">
     <link rel="icon" href="./assets/favicon.ico">
+    <script>
+      (function() {
+        const savedTheme = localStorage.getItem('travel-theme') || 'light';
+        document.documentElement.setAttribute('data-theme', savedTheme);
+      })();
+    </script>
     <script type="module" src="./js/main.js"></script>
   </head>
 
