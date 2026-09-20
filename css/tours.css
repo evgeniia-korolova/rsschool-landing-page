@@ -215,6 +215,20 @@
   box-shadow: 0 4px 12px rgba(250, 204, 21, 0.2);
 }
 
+.show-more__btn {
+  background-color: var(--color-accent);
+  color: var(--color-light);
+  padding: 16px 36px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  border-radius: 8px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  display: block;
+  margin: 0 auto;
+  margin-top: 1.4rem;
+  
+}
+
 @media (hover: hover) {
   .tour-card:hover {
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.06);
@@ -226,6 +240,11 @@
 
   .tour-card:hover .tour-card__title {
     color: var(--color-accent);
+  }
+
+  .show-more__btn:hover {
+    background-color: var(--color-accent-hover);
+    transform: translateY(-2px);
   }
 }
 
