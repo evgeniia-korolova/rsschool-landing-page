@@ -13,8 +13,9 @@
     <link rel="stylesheet" href="./css/sections/slider.css">
     <link rel="stylesheet" href="./css/sections/experiences.css">
     <link rel="stylesheet" href="./css/sections/about-stats.css">
+    <link rel="stylesheet" href="./css/sections/destinations-map.css">
     <link rel="stylesheet" href="./css/footer.css">
-    
+
     <link rel="icon" href="./assets/favicon.ico">
     <script type="module" src="./js/main.js"></script>
   </head>
@@ -53,7 +54,7 @@
 
 
         <div class="header__controls">
-          <button class="burger-btn" aria-label="Open menu" aria-expanded="false">
+          <button class="burger-btn" aria-label="Open menu" aria-expanded="false" aria-controls="nav">
             <svg class="ham hamRotate" viewBox="0 0 100 100" aria-hidden="true" width="50" fill="currentColor">
               <path class="line top"
                 d="m 30,33 h 40 c 3.722839,0 7.5,3.126468 7.5,8.578427 0,5.451959 -2.727029,8.421573 -7.5,8.421573 h -20" />
@@ -71,7 +72,9 @@
             </svg>
             <svg class="theme-toggle__icon theme-toggle__icon--moon" viewBox="64 64 896 896" width="1em" height="1em"
               fill="currentColor" aria-hidden="true">
-              <path d="M489.5 111.66c30.65-1.8 45.98 36.44 22.58 56.33A243.35 243.35 0 00426 354c0 134.76 109.24 244 244 244 72.58 0 139.9-31.83 186.01-86.08 19.87-23.38 58.07-8.1 56.34 22.53C900.4 745.82 725.15 912 512.5 912 291.31 912 112 732.69 112 511.5c0-211.39 164.29-386.02 374.2-399.65l.2-.01zm-81.15 79.75l-4.11 1.36C271.1 237.94 176 364.09 176 511.5 176 697.34 326.66 848 512.5 848c148.28 0 274.94-96.2 319.45-230.41l.63-1.93-.11.07a307.06 307.06 0 01-159.73 46.26L670 662c-170.1 0-308-137.9-308-308 0-58.6 16.48-114.54 46.27-162.47z"></path>
+              <path
+                d="M489.5 111.66c30.65-1.8 45.98 36.44 22.58 56.33A243.35 243.35 0 00426 354c0 134.76 109.24 244 244 244 72.58 0 139.9-31.83 186.01-86.08 19.87-23.38 58.07-8.1 56.34 22.53C900.4 745.82 725.15 912 512.5 912 291.31 912 112 732.69 112 511.5c0-211.39 164.29-386.02 374.2-399.65l.2-.01zm-81.15 79.75l-4.11 1.36C271.1 237.94 176 364.09 176 511.5 176 697.34 326.66 848 512.5 848c148.28 0 274.94-96.2 319.45-230.41l.63-1.93-.11.07a307.06 307.06 0 01-159.73 46.26L670 662c-170.1 0-308-137.9-308-308 0-58.6 16.48-114.54 46.27-162.47z">
+              </path>
             </svg>
           </button>
         </div>
@@ -323,6 +326,86 @@
 
       </div>
     </section>
+
+    <section id="destination-map" class="destinations-map">
+      <div class="container">
+
+        <div class="destinations-map__header">
+          <h2 class="destinations-map__title">Interactive Destinations</h2>
+          <p class="destinations-map__subtitle">Click on the hot spots to explore categories directly</p>
+        </div>
+
+
+        <div class="map-wrapper">
+          <div class="map-area" id="interactive-map">
+
+            <img src="./assets/images/world-light.svg" alt="World Map" class="map-area__bg" draggable="false">
+
+            <!-- МАРКЕР 1: Исландия (Sightseeing) -->
+            <div class="map-marker marker-iceland"  data-category="sightseeing">
+              <button class="map-marker__point" aria-label="Explore Iceland Tours">
+                <span class="map-marker__pulse"></span>
+              </button>
+              <div class="map-tooltip">
+                <img src="https://windows10spotlight.com/wp-content/uploads/2023/06/aa79995e263138f4b32e43d718919948.jpg" alt="Iceland" class="map-tooltip__img">
+                <div class="map-tooltip__info">
+                  <span class="map-tooltip__category">Sightseeing</span>
+                  <h4 class="map-tooltip__title">Wild Iceland</h4>
+                  <p class="map-tooltip__action">View Tours &rarr;</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- МАРКЕР 2: Карибы (Cruise) -->
+            <div class="map-marker marker-cruise" data-category="cruise">
+              <button class="map-marker__point" aria-label="Explore Caribbean Cruises">
+                <span class="map-marker__pulse"></span>
+              </button>
+              <div class="map-tooltip">
+                <img src="https://tse1.mm.bing.net/th/id/OIP.L7MtCQaCDj5Q5JQ2FvSZ6gHaEL?r=0&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Caribbean" class="map-tooltip__img">
+                <div class="map-tooltip__info">
+                  <span class="map-tooltip__category">Cruise</span>
+                  <h4 class="map-tooltip__title">Caribbean Cruise</h4>
+                  <p class="map-tooltip__action">View Tours &rarr;</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- МАРКЕР 3: Танзания (Exotic)  -->
+            <div class="map-marker marker-exotic" data-category="exotic">
+              <button class="map-marker__point" aria-label="Explore Tanzania Tours">
+                <span class="map-marker__pulse"></span>
+              </button>
+              <div class="map-tooltip">
+                <img src="https://tse1.mm.bing.net/th/id/OIP.dzaRTjoersI0q_HYM9XVsQHaE8?r=0&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Tanzania" class="map-tooltip__img">
+                <div class="map-tooltip__info">
+                  <span class="map-tooltip__category">Exotic</span>
+                  <h4 class="map-tooltip__title">Heart of Tanzania</h4>
+                  <p class="map-tooltip__action">View Tours &rarr;</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- МАРКЕР 4: Бали (Beach)-->
+            <div class="map-marker marker-beach" data-category="beach">
+              <button class="map-marker__point" aria-label="Explore Bali Beach Tours">
+                <span class="map-marker__pulse"></span>
+              </button>
+              <div class="map-tooltip">
+                <img src="https://backpacking-tours.imgix.net/storage/uploads/tours/bali/itinerary-photos/bali-itinerary9_nlzhv.png?w=1250&h=&crop=faces&q=75&auto=format&fm=png" alt="Bali Beach" class="map-tooltip__img">
+                <div class="map-tooltip__info">
+                  <span class="map-tooltip__category">Beach</span>
+                  <h4 class="map-tooltip__title">Bali Sunsets</h4>
+                  <p class="map-tooltip__action">View Tours &rarr;</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
     <footer>
       <div class="container container-footer">
         <div class="footer-item git-link">
