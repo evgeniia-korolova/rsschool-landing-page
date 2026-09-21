@@ -1,0 +1,144 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url('../assets/fonts/montserrat-v31-latin-800.woff2') format('woff2');
+}
+
+/* inter-regular - latin */
+@font-face {
+  font-display: swap;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  src: url('..assets/fonts/inter/inter-v20-latin-regular.woff2') format('woff2');
+}
+/* inter-500 - latin */
+@font-face {
+  font-display: swap;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  src: url('..assets/fonts/inter/inter-v20-latin-500.woff2') format('woff2');
+}
+/* inter-700 - latin */
+@font-face {
+  font-display: swap;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  src: url('..assets/fonts/inter/inter-v20-latin-700.woff2') format('woff2');
+}
+
+html {
+  scroll-padding-top: 80px;
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  font-family: var(--font-main);
+  font-weight: 400;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+
+  background-color: var(--bg-body);
+  color: var(--color-main);
+  transition: background-color 0.6s ease, color 0.7s ease;
+}
+
+h1,
+h2,
+h3,
+h4,
+.hero__title,
+.header__logo,
+.tours-filter__btn {
+  font-family: var(--font-heading);  
+  letter-spacing: -0.02em;
+}
+h1, h2 {
+  font-weight: 800;
+}
+
+h3, h4 {
+  font-weight: 600;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  display: inline-block;
+}
+
+button {
+  cursor: pointer;
+  font: inherit;
+  background: none;
+  border: none;
+  color: inherit;
+}
+
+.container {
+  width: 100%;
+  max-width: var(--desktop-width);
+  margin-left: auto;
+  margin-right: auto;
+  margin: 0 auto;
+
+  padding-left: 80px;
+  padding-right: 80px;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+@media (width <= 1200px) {
+  .container {
+    max-width: var(--laptop-width);
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
+
+@media (width <= 1024px) {
+  .container {
+    max-width: var(--tablet-width);
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+@media (width <= 480px) {
+  .container {
+    max-width: var(--mobile-width);
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+}

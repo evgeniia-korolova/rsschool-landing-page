@@ -1,0 +1,190 @@
+.destinations-map {
+  padding: 60px 0 20px 0;
+  background-color: var(--bg-body);
+}
+
+.destinations-map__header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.destinations-map__title {
+  font-size: clamp(2rem, 4vw, 2.5rem);
+  color: var(--color-main);
+  margin-bottom: 10px;
+}
+
+.destinations-map__subtitle {
+  color: var(--color-secondary);
+  font-family: var(--font-main);
+}
+
+
+.map-wrapper {
+  position: relative;
+  width: 100%;
+  background-color: var(--bg-secondary);
+  border-radius: 16px;
+  overflow: hidden; 
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+}
+
+
+.map-area {
+  position: relative;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 9; 
+  transition: transform 0.3s ease-out;
+  transform-origin: center center; 
+}
+
+/* Подложка */
+.map-area__bg {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  opacity: 0.8;  
+}
+
+/* --- МАРКЕРЫ --- */
+.map-marker {
+  position: absolute;
+  z-index: 10;
+
+  &.marker-iceland {
+    top: 20%;
+    left: 44%;
+  }
+  &.marker-cruise {
+    top: 48%;
+    left: 26%;
+  }
+  &.marker-exotic {
+    top: 62%;
+    left: 54%;
+  }
+  &.marker-beach {
+    top: 68%;
+    left: 78%;
+  }
+}
+
+.map-marker__point {
+  position: relative;
+  width: 16px;
+  height: 16px;
+  background-color: var(--color-accent);
+  border: 3px solid var(--bg-main);
+  border-radius: 50%;
+  cursor: pointer;
+  padding: 0;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  display: block;
+}
+
+
+.map-marker__pulse {
+  position: absolute;
+  top: -3px;
+  left: -3px;
+  width: 16px;
+  height: 16px;
+  border: 3px solid var(--color-accent);
+  border-radius: 50%;
+  opacity: 1;
+  animation: mapPulse 2s infinite ease-out;
+  pointer-events: none;
+}
+
+@keyframes mapPulse {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(2.5);
+    opacity: 0;
+  }
+}
+
+/* --- ТУЛТИПЫ --- */
+.map-tooltip {
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%) translateY(10px);
+  width: 260px;
+  background-color: var(--bg-main);
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+  display: flex;
+  gap: 12px;
+  padding: 8px;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, transform 0.3s ease, visibility 0.3s;
+  pointer-events: none; 
+  z-index: 20;
+}
+
+
+.map-tooltip::after {
+  content: '';
+  position: absolute;
+  bottom: -6px;
+  left: 50%;
+  transform: translateX(-50%) rotate(45deg);
+  width: 12px;
+  height: 12px;
+  background-color: var(--bg-main);
+}
+
+.map-tooltip__img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.map-tooltip__info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.map-tooltip__category {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  color: var(--color-accent);
+  font-weight: 700;
+  letter-spacing: 0.05em;
+}
+
+.map-tooltip__title {
+  font-family: var(--font-heading);
+  font-size: 1rem;
+  color: var(--color-main);
+  margin: 2px 0 6px 0;
+}
+
+.map-tooltip__action {
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: var(--color-secondary);
+}
+
+
+@media (hover: hover) {
+  .map-marker:hover .map-tooltip {
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(-50%) translateY(0);
+  }
+  
+  .map-marker__point:hover {
+    transform: scale(1.1);
+    background-color: var(--color-accent-hover);
+  }
+}
