@@ -11,7 +11,7 @@
   font-style: normal;
   font-weight: 800;
   font-display: swap;
-  src: url('../assets/fonts/montserrat-v31-latin-800.woff2') format('woff2');
+  src: url('../../assets/fonts/Montserrat/montserrat-v31-latin-800.woff2') format('woff2');
 }
 
 /* inter-regular - latin */
@@ -20,7 +20,7 @@
   font-family: 'Inter';
   font-style: normal;
   font-weight: 400;
-  src: url('..assets/fonts/inter/inter-v20-latin-regular.woff2') format('woff2');
+  src: url('../../assets/fonts/Inter/inter-v20-latin-regular.woff2') format('woff2');
 }
 /* inter-500 - latin */
 @font-face {
@@ -28,7 +28,7 @@
   font-family: 'Inter';
   font-style: normal;
   font-weight: 500;
-  src: url('..assets/fonts/inter/inter-v20-latin-500.woff2') format('woff2');
+  src: url('../../assets/fonts/Inter/inter-v20-latin-500.woff2') format('woff2');
 }
 /* inter-700 - latin */
 @font-face {
@@ -36,7 +36,7 @@
   font-family: 'Inter';
   font-style: normal;
   font-weight: 700;
-  src: url('..assets/fonts/inter/inter-v20-latin-700.woff2') format('woff2');
+  src: url('../../assets/fonts/Inter/inter-v20-latin-700.woff2') format('woff2');
 }
 
 html {
