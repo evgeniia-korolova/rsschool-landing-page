@@ -47,7 +47,7 @@ class TourCard {
           </svg>
           <span class="tour-card__rating-value">${this.data.rating}</span>
         </div>
-        <button class="btn-open-modal" data-action="details">Details</button>
+        <button class="btn-open-modal" data-action="details">Book Now</button>
       </div>
     `;
 
