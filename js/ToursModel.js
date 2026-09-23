@@ -6,7 +6,7 @@ class ToursModel {
 
   async loadTours() {
     try {
-      const response = await fetch('../data/tours.json');
+      const response = await fetch('./data/tours.json');
       if (!response.ok) throw new Error('Network response was not ok');
       this.tours = await response.json();
       return this.tours;
