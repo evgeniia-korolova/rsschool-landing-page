@@ -42,6 +42,7 @@
 html {
   scroll-padding-top: 80px;
   scroll-behavior: smooth;
+  scrollbar-gutter: stable;
 }
 
 body {

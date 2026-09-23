@@ -34,6 +34,11 @@ class ToursController {
     this.renderCurrentState();
 
     this.bindEvents();
+    this.checkExternalRedirect();
+
+
+
+    this.scrollToGridIfNeeded();
   }
 
   initCategoriesMenu() {
@@ -45,6 +50,34 @@ class ToursController {
       linkSelector: '.filter-btn',
       linkActiveClass: 'filter-btn--active',
     });
+   
+  }
+
+  checkExternalRedirect() {
+    const targetCategory = localStorage.getItem('wanderlust_target_category');
+    
+    if (targetCategory) {     
+      localStorage.removeItem('wanderlust_target_category');      
+      
+      const targetButton = document.querySelector(`.filter-btn[data-category="${targetCategory}"]`);
+      
+      if (targetButton) {        
+        targetButton.click();        
+       
+        this.shouldScrollToGrid = true;
+      }
+    }
+  }
+
+  scrollToGridIfNeeded() {
+    if (this.shouldScrollToGrid) {
+      this.shouldScrollToGrid = false;      
+      
+      const toursGrid = document.querySelector('#tours-grid');
+      if (toursGrid) {
+        toursGrid.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+    }
   }
 
   updateLimitByScreenSize() {
@@ -112,19 +145,15 @@ class ToursController {
     });
 
     if (this.view.grid) {
-      this.view.grid.addEventListener('click', (e) => {
-        // Ищем ближайшего предка с классом .tour-card, по которому кликнули
+      this.view.grid.addEventListener('click', (e) => {        
         const card = e.target.closest('.tour-card');
-        if (!card) return;
-    
-        // Извлекаем ID тура из data-атрибута карточки
-        const tourId = card.getAttribute('data-tour-id');
-    
-        // Находим чистые данные этого тура в Модели
+        if (!card) return;    
+        
+        const tourId = card.getAttribute('data-tour-id');    
+        
         const tourData = this.model.tours.find(t => t.id === tourId);
     
-        if (tourData) {
-          // Отрисовываем контент внутри модалки и открываем её
+        if (tourData) {          
           this.modalView.render(tourData);
           this.modalView.open();
         }
