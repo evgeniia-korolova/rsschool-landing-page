@@ -308,3 +308,186 @@
     transform: rotate(180deg);
   }
 }
+
+.tour-modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -40%) scale(0.95);
+  margin: 0; 
+  border: none;
+  border-radius: 16px;
+  padding: 28px;
+  background-color: var(--bg-main);
+  color: var(--color-primary);
+  max-width: clamp(340px, 90vw, 540px);
+  width: calc(100% - 32px);
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.3);
+  opacity: 0;
+  transition: 
+    opacity 0.25s ease, 
+    transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+  will-change: transform, opacity;
+}
+
+.tour-modal[open] {
+  opacity: 1;
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.tour-modal::backdrop {
+  background-color: rgba(15, 23, 42, 0.6);
+  backdrop-filter: blur(4px);
+}
+
+body:has(dialog[open]) {
+  overflow: hidden;
+}
+
+/* Элементы модального окна */
+.tour-modal__close-btn {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  background: none;
+  border: none;
+  color: var(--color-secondary);
+  cursor: pointer;
+  padding: 8px;
+  transition: transform 0.2s ease, color 0.2s ease;
+}
+
+.tour-modal__close-btn:hover {
+  transform: rotate(90deg);
+  color: var(--color-accent);
+}
+
+.tour-modal__title {
+  margin-bottom: 4px;
+  font-weight: 700;
+  padding-right: 24px;
+  font-size: clamp(1.3rem, 1.2rem + 0.5vw, 1.6rem);
+}
+
+.tour-modal__category {
+  font-size: 0.85rem;
+  color: var(--color-accent);
+  text-transform: uppercase;
+  font-weight: 600;
+  display: block;
+  margin-bottom: 16px;
+}
+
+.tour-modal__desc {
+  color: var(--color-secondary);
+  margin-bottom: 24px;
+  line-height: 1.5;
+  font-size: 0.95rem;
+}
+
+/* Контейнер параметров */
+.tour-modal__parameters {
+  margin-bottom: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  background-color: var(--bg-secondary);
+  padding: 16px;
+  border-radius: 12px;
+}
+
+.tour-modal__param-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.tour-modal__label {
+  font-weight: 600;
+}
+
+.tour-modal__label--checkbox {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+  user-select: none;
+  font-weight: 500;
+}
+
+.tour-modal__checkbox {
+  width: 18px;
+  height: 18px;
+  accent-color: var(--color-accent);
+}
+
+/* Стилизация инпута для изменения количества ночей */
+.tour-modal__input-nights {
+  width: 70px;
+  padding: 6px 10px;
+  border-radius: 6px;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  background: var(--bg-main);
+  color: var(--color-primary);
+  font-weight: 600;
+  text-align: center;
+}
+
+.tour-modal__excursions-section {
+  border-top: 1px solid rgba(0, 0, 0, 0.08);
+  padding-top: 12px;
+  margin-top: 4px;
+}
+
+.tour-modal__subheading {
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.tour-modal__excursions-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* Футер модалки */
+.tour-modal__footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid var(--bg-secondary);
+  padding-top: 20px;
+}
+
+.tour-modal__price-label {
+  font-size: 0.9rem;
+  color: var(--color-secondary);
+}
+
+.tour-modal__price-value {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: var(--color-accent);
+}
+
+/* Экран успешного заказа */
+.tour-modal__success-screen {
+  text-align: center;
+  padding: 20px 0;
+}
+
+.tour-modal__success-icon {
+  color: var(--color-accent);
+  margin-bottom: 16px;
+}
+
+.tour-modal__order-badge {
+  background-color: var(--bg-secondary);
+  padding: 12px;
+  border-radius: 8px;
+  font-family: monospace;
+  font-size: 1.1rem;
+  margin-bottom: 24px;
+  display: inline-block;
+}

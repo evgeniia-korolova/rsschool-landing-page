@@ -1,6 +1,7 @@
 import BurgerMenu from './menu.js';
 import ToursModel from './ToursModel.js';
 import ToursView from './ToursView.js';
+import TourModalView from './TourModalView.js';
 
 class ToursController {
   constructor() {
@@ -9,6 +10,8 @@ class ToursController {
       gridSelector: '#tours-grid',
       showMoreSelector: '.show-more__btn',
     });
+
+    this.modalView = new TourModalView('#tour-modal');
 
     this.cardsLimit = 6;
     this.renderedCount = 0;
@@ -107,6 +110,26 @@ class ToursController {
         this.renderCurrentState(false);
       }
     });
+
+    if (this.view.grid) {
+      this.view.grid.addEventListener('click', (e) => {
+        // Ищем ближайшего предка с классом .tour-card, по которому кликнули
+        const card = e.target.closest('.tour-card');
+        if (!card) return;
+    
+        // Извлекаем ID тура из data-атрибута карточки
+        const tourId = card.getAttribute('data-tour-id');
+    
+        // Находим чистые данные этого тура в Модели
+        const tourData = this.model.tours.find(t => t.id === tourId);
+    
+        if (tourData) {
+          // Отрисовываем контент внутри модалки и открываем её
+          this.modalView.render(tourData);
+          this.modalView.open();
+        }
+      });
+    }
   }
 }
 
