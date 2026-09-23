@@ -52,16 +52,12 @@
   display: none;
 }
 
-
-
 @media (hover: hover) {
-  
   .filter-btn:not(.filter-btn--active):hover {
     background-color: var(--bg-body);
     color: var(--color-main);
   }
 
-  
   .filter-btn--active:hover {
     background-color: var(--color-accent-hover);
     color: var(--color-light);
@@ -226,7 +222,6 @@
   display: block;
   margin: 0 auto;
   margin-top: 1.4rem;
-  
 }
 
 @media (hover: hover) {
@@ -249,12 +244,11 @@
 }
 
 @media (max-width: 768px) {
-  
   .tours-filter {
     position: relative;
     width: 100%;
   }
-  
+
   .tours-filter__toggle {
     display: flex;
     justify-content: space-between;
@@ -269,13 +263,8 @@
     font-size: 0.95rem;
     cursor: pointer;
   }
-  
-  .tours-filter__chevron {
-    transition: transform 0.3s ease;
-  }
-  
-  .tours-filter__body {
-    display: none; 
+
+  .tours-filter__body {    
     flex-direction: column;
     width: 100%;
     position: absolute;
@@ -288,23 +277,34 @@
     box-shadow: 0 15px 35px rgba(0, 0, 0, 0.08);
     gap: 8px;
     z-index: 950;
+
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-10px);
+    transition: opacity 0.3s ease, visibility 0.3s ease,
+      transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    will-change: transform, opacity;
   }
 
-  
   .tours-filter__body--open {
-    display: flex;
-  }
-  
-  
-  .tours-filter__body--open ~ .tours-filter__toggle .tours-filter__chevron {
-    transform: rotate(180deg);
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
   }
 
- 
   .filter-btn {
     width: 100%;
-    text-align: left; 
+    text-align: left;
     padding: 12px 16px;
     border-radius: 10px;
+  }
+
+  .tours-filter__chevron {
+    transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    will-change: transform;
+  }
+
+  .tours-filter__toggle.tours-filter__chevron--rotated .tours-filter__chevron {
+    transform: rotate(180deg);
   }
 }

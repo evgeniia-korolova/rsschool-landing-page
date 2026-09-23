@@ -13,12 +13,12 @@
     <link rel="stylesheet" href="./css/footer.css">
     <link rel="icon" href="./assets/favicon.ico">
     <script>
-      (function() {
+      (function () {
         const savedTheme = localStorage.getItem('travel-theme') || 'light';
         document.documentElement.setAttribute('data-theme', savedTheme);
       })();
     </script>
-    <script type="module" src="./js/main.js"></script>
+
   </head>
 
   <body>
@@ -39,7 +39,7 @@
         <nav class="header__nav" id="header-menu">
           <ul class="header__menu-list">
             <li class="header__menu-item">
-              <a href="./index.html#slider" class="header__menu-link">Destinations</a>
+              <a href="./index.html#slider" class="header__menu-link ">Destinations</a>
             </li>
             <li class="header__menu-item">
               <a href="./index.html#experiences" class="header__menu-link">Services</a>
@@ -51,7 +51,7 @@
               <a href="./index.html#destination-map" class="header__menu-link">Map</a>
             </li>
             <li class="header__menu-item">
-              <a href="#!" class="header__menu-link header__logo--disabled">Tours</a>
+              <a href="#!" class="header__menu-link header__menu-link--active header__logo--disabled">Tours</a>
             </li>
           </ul>
         </nav>
@@ -101,8 +101,9 @@
           <div class="tours-filter">
             <button class="tours-filter__toggle" aria-expanded="false" aria-controls="filter-links">
               <span>Filter By Category</span>
-              <svg class="tours-filter__chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
-                <path d="M6 9l6 6 6-6"/>
+              <svg class="tours-filter__chevron" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <path d="M6 9l6 6 6-6" />
               </svg>
             </button>
             <div class="tours-filter__body" id="filter-links">
@@ -160,8 +161,8 @@
             <!-- exotic -1 -->
             <article class="tour-card" data-tour-id="tour-beach-1">
               <div class="tour-card__img-wrapper">
-                <img src="https://thegreenvoyage.com/wp-content/uploads/2024/01/shutterstock_2340834055.jpg.webp" alt="Serengeti Wild Safari"
-                  class="tour-card__img">
+                <img src="https://thegreenvoyage.com/wp-content/uploads/2024/01/shutterstock_2340834055.jpg.webp"
+                  alt="Serengeti Wild Safari" class="tour-card__img">
               </div>
 
               <div class="tour-card__content">
@@ -195,8 +196,9 @@
             <!-- exotic-4 -->
             <article class="tour-card" data-tour-id="tour-beach-1">
               <div class="tour-card__img-wrapper">
-                <img src="https://images.unsplash.com/photo-1787858421430-0b9ee19a6964?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Cappadocia Balloon & Caves"
-                  class="tour-card__img">
+                <img
+                  src="https://images.unsplash.com/photo-1787858421430-0b9ee19a6964?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                  alt="Cappadocia Balloon & Caves" class="tour-card__img">
               </div>
 
               <div class="tour-card__content">
@@ -268,8 +270,9 @@
             <!-- sight-5 -->
             <article class="tour-card" data-tour-id="tour-beach-1">
               <div class="tour-card__img-wrapper">
-                <img src="https://www.obsidianurbexphotography.com/wp-content/uploads/2023/08/The-Lost-City-Of-Petra-Jordan-El-Khazneh-Standing-Infront.jpg" alt="Lost City of Petra & Jordan"
-                  class="tour-card__img">
+                <img
+                  src="https://www.obsidianurbexphotography.com/wp-content/uploads/2023/08/The-Lost-City-Of-Petra-Jordan-El-Khazneh-Standing-Infront.jpg"
+                  alt="Lost City of Petra & Jordan" class="tour-card__img">
               </div>
 
               <div class="tour-card__content">
@@ -304,8 +307,9 @@
             <!-- exotic-3 6 -->
             <article class="tour-card" data-tour-id="tour-beach-1">
               <div class="tour-card__img-wrapper">
-                <img src="https://img.freepik.com/premium-photo/amazon-trekking-expedition-captivating-scene-trekkers-walking-through-dense-rainforest-foliage_1235831-48320.jpg?w=1060" alt="Amazon Rainforest Expedition"
-                  class="tour-card__img">
+                <img
+                  src="https://img.freepik.com/premium-photo/amazon-trekking-expedition-captivating-scene-trekkers-walking-through-dense-rainforest-foliage_1235831-48320.jpg?w=1060"
+                  alt="Amazon Rainforest Expedition" class="tour-card__img">
               </div>
 
               <div class="tour-card__content">
@@ -339,8 +343,9 @@
             <!-- 7 beach-5 -->
             <article class="tour-card" data-tour-id="tour-beach-1">
               <div class="tour-card__img-wrapper">
-                <img src="https://th.bing.com/th/id/R.2694c3a28428e0cee7d25c29375183ac?rik=fyE4TjC5RFAIOw&pid=ImgRaw&r=0" alt="El Nido Hidden Lagoons" 
-                  class="tour-card__img">
+                <img
+                  src="https://th.bing.com/th/id/R.2694c3a28428e0cee7d25c29375183ac?rik=fyE4TjC5RFAIOw&pid=ImgRaw&r=0"
+                  alt="El Nido Hidden Lagoons" class="tour-card__img">
               </div>
 
               <div class="tour-card__content">
@@ -375,8 +380,9 @@
             <!-- 8-sight-1 -->
             <article class="tour-card" data-tour-id="tour-beach-1">
               <div class="tour-card__img-wrapper">
-                <img src="https://images.unsplash.com/photo-1785845333757-cbbd4fc224af?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Ancient Kyoto Shrines"
-                  class="tour-card__img">
+                <img
+                  src="https://images.unsplash.com/photo-1785845333757-cbbd4fc224af?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                  alt="Ancient Kyoto Shrines" class="tour-card__img">
               </div>
 
               <div class="tour-card__content">
@@ -451,6 +457,9 @@
       </div>
       <div class="author">&copy; Evgeniia Korolova 2026</div>
     </footer>
+
+    <script type="module" src="./js/main.js"></script>
+    <script type="module" src="./js/tours.js"></script>
 
   </body>
 
