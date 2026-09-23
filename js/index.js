@@ -1,3 +1,6 @@
+import TravelSlider from "./slider.js";
+
+
 const initHeaderHighlight = () => {
   const currentHash = window.location.hash; 
   if (!currentHash) return; 
@@ -14,3 +17,11 @@ const initHeaderHighlight = () => {
 };
 
 initHeaderHighlight();
+
+const travelSlider = new TravelSlider({
+  trackSelector: '.travel-slider__track',
+  prevBtnSelector: '.travel-slider__nav-btn--prev',
+  nextBtnSelector: '.travel-slider__nav-btn--next',
+  slideSelector: '.travel-slide',
+  activeClass: 'travel-slide--active'
+});
