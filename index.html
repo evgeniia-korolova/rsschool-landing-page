@@ -15,15 +15,17 @@
     <link rel="stylesheet" href="./css/sections/about-stats.css">
     <link rel="stylesheet" href="./css/sections/destinations-map.css">
     <link rel="stylesheet" href="./css/footer.css">
+    <link rel="preload" href="./assets/fonts/Inter/inter-v20-latin-regular.woff2" as="font" type="font/woff2"
+      crossorigin>
 
     <link rel="icon" href="./assets/favicon.ico">
     <script>
-      (function() {
+      (function () {
         const savedTheme = localStorage.getItem('travel-theme') || 'light';
         document.documentElement.setAttribute('data-theme', savedTheme);
       })();
     </script>
-    <script type="module" src="./js/main.js"></script>
+
   </head>
 
   <body>
@@ -346,17 +348,24 @@
 
 
         <div class="map-wrapper">
+          <div class="map-controls">
+            <button type="button" class="map-btn map-btn--zoom-in" aria-label="Zoom">+</button>
+            <button type="button" class="map-btn map-btn--zoom-out" aria-label="Unzoom">-</button>
+          </div>
+          
           <div class="map-area" id="interactive-map">
 
             <img src="./assets/images/world-light.svg" alt="World Map" class="map-area__bg" draggable="false">
 
             <!-- МАРКЕР 1: Исландия (Sightseeing) -->
-            <div class="map-marker marker-iceland"  data-category="sightseeing">
+            <div class="map-marker marker-iceland" data-category="sightseeing">
               <button class="map-marker__point" aria-label="Explore Iceland Tours">
                 <span class="map-marker__pulse"></span>
               </button>
               <div class="map-tooltip">
-                <img src="https://windows10spotlight.com/wp-content/uploads/2023/06/aa79995e263138f4b32e43d718919948.jpg" alt="Iceland" class="map-tooltip__img">
+                <img
+                  src="https://windows10spotlight.com/wp-content/uploads/2023/06/aa79995e263138f4b32e43d718919948.jpg"
+                  alt="Iceland" class="map-tooltip__img">
                 <div class="map-tooltip__info">
                   <span class="map-tooltip__category">Sightseeing</span>
                   <h3 class="map-tooltip__title">Wild Iceland</h3>
@@ -371,7 +380,9 @@
                 <span class="map-marker__pulse"></span>
               </button>
               <div class="map-tooltip">
-                <img src="https://tse1.mm.bing.net/th/id/OIP.L7MtCQaCDj5Q5JQ2FvSZ6gHaEL?r=0&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Caribbean" class="map-tooltip__img">
+                <img
+                  src="https://tse1.mm.bing.net/th/id/OIP.L7MtCQaCDj5Q5JQ2FvSZ6gHaEL?r=0&rs=1&pid=ImgDetMain&o=7&rm=3"
+                  alt="Caribbean" class="map-tooltip__img">
                 <div class="map-tooltip__info">
                   <span class="map-tooltip__category">Cruise</span>
                   <h3 class="map-tooltip__title">Caribbean Cruise</h3>
@@ -386,7 +397,9 @@
                 <span class="map-marker__pulse"></span>
               </button>
               <div class="map-tooltip">
-                <img src="https://tse1.mm.bing.net/th/id/OIP.dzaRTjoersI0q_HYM9XVsQHaE8?r=0&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Tanzania" class="map-tooltip__img">
+                <img
+                  src="https://tse1.mm.bing.net/th/id/OIP.dzaRTjoersI0q_HYM9XVsQHaE8?r=0&rs=1&pid=ImgDetMain&o=7&rm=3"
+                  alt="Tanzania" class="map-tooltip__img">
                 <div class="map-tooltip__info">
                   <span class="map-tooltip__category">Exotic</span>
                   <h3 class="map-tooltip__title">Heart of Tanzania</h3>
@@ -401,7 +414,9 @@
                 <span class="map-marker__pulse"></span>
               </button>
               <div class="map-tooltip">
-                <img src="https://backpacking-tours.imgix.net/storage/uploads/tours/bali/itinerary-photos/bali-itinerary9_nlzhv.png?w=1250&h=&crop=faces&q=75&auto=format&fm=png" alt="Bali Beach" class="map-tooltip__img">
+                <img
+                  src="https://backpacking-tours.imgix.net/storage/uploads/tours/bali/itinerary-photos/bali-itinerary9_nlzhv.png?w=1250&h=&crop=faces&q=75&auto=format&fm=png"
+                  alt="Bali Beach" class="map-tooltip__img">
                 <div class="map-tooltip__info">
                   <span class="map-tooltip__category">Beach</span>
                   <h3 class="map-tooltip__title">Bali Sunsets</h3>
@@ -410,6 +425,7 @@
               </div>
             </div>
           </div>
+
         </div>
 
       </div>
@@ -452,6 +468,9 @@
       </div>
       <div class="author">&copy; Evgeniia Korolova 2026</div>
     </footer>
+
+    <script type="module" src="./js/main.js"></script>
+    <script type="module" src="./js/index.js"></script>
   </body>
 
 </html>

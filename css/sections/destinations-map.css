@@ -19,24 +19,23 @@
   font-family: var(--font-main);
 }
 
-
 .map-wrapper {
   position: relative;
   width: 100%;
   background-color: var(--bg-secondary);
   border-radius: 16px;
-  overflow: hidden; 
+  overflow: hidden;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
 }
-
 
 .map-area {
   position: relative;
   width: 100%;
   height: auto;
-  aspect-ratio: 16 / 9; 
-  transition: transform 0.3s ease-out;
-  transform-origin: center center; 
+  aspect-ratio: 16 / 9;
+  will-change: transform;
+  /* transition: transform 0.3s ease-out;
+  transform-origin: center center;  */
 }
 
 /* Подложка */
@@ -44,7 +43,7 @@
   width: 100%;
   height: 100%;
   object-fit: contain;
-  opacity: 0.8;  
+  opacity: 0.8;
 }
 
 /* --- МАРКЕРЫ --- */
@@ -82,7 +81,6 @@
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   display: block;
 }
-
 
 .map-marker__pulse {
   position: absolute;
@@ -125,10 +123,9 @@
   opacity: 0;
   visibility: hidden;
   transition: opacity 0.3s ease, transform 0.3s ease, visibility 0.3s;
-  pointer-events: none; 
+  pointer-events: none;
   z-index: 20;
 }
-
 
 .map-tooltip::after {
   content: '';
@@ -175,16 +172,47 @@
   color: var(--color-secondary);
 }
 
-
 @media (hover: hover) {
   .map-marker:hover .map-tooltip {
     opacity: 1;
     visibility: visible;
     transform: translateX(-50%) translateY(0);
   }
-  
+
   .map-marker__point:hover {
     transform: scale(1.1);
     background-color: var(--color-accent-hover);
+  }
+}
+
+.map-controls {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  z-index: 10;
+}
+.map-btn {
+  width: 40px;
+  height: 40px;
+  border-radius: 8px;
+  border: none;
+  background: #fff;
+  color: var(--color-text-dark);
+  font-size: 20px;
+  font-weight: bold;
+  
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.2s;
+}
+
+@media (hover: hover) {
+  .map-btn:hover {
+    background: #f0f0f0;
   }
 }

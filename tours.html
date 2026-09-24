@@ -13,12 +13,12 @@
     <link rel="stylesheet" href="./css/footer.css">
     <link rel="icon" href="./assets/favicon.ico">
     <script>
-      (function() {
+      (function () {
         const savedTheme = localStorage.getItem('travel-theme') || 'light';
         document.documentElement.setAttribute('data-theme', savedTheme);
       })();
     </script>
-    <script type="module" src="./js/main.js"></script>
+
   </head>
 
   <body>
@@ -39,7 +39,7 @@
         <nav class="header__nav" id="header-menu">
           <ul class="header__menu-list">
             <li class="header__menu-item">
-              <a href="./index.html#slider" class="header__menu-link">Destinations</a>
+              <a href="./index.html#slider" class="header__menu-link ">Destinations</a>
             </li>
             <li class="header__menu-item">
               <a href="./index.html#experiences" class="header__menu-link">Services</a>
@@ -51,7 +51,7 @@
               <a href="./index.html#destination-map" class="header__menu-link">Map</a>
             </li>
             <li class="header__menu-item">
-              <a href="#!" class="header__menu-link header__logo--disabled">Tours</a>
+              <a href="#!" class="header__menu-link header__menu-link--active header__logo--disabled">Tours</a>
             </li>
           </ul>
         </nav>
@@ -101,8 +101,9 @@
           <div class="tours-filter">
             <button class="tours-filter__toggle" aria-expanded="false" aria-controls="filter-links">
               <span>Filter By Category</span>
-              <svg class="tours-filter__chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
-                <path d="M6 9l6 6 6-6"/>
+              <svg class="tours-filter__chevron" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <path d="M6 9l6 6 6-6" />
               </svg>
             </button>
             <div class="tours-filter__body" id="filter-links">
@@ -121,293 +122,8 @@
         <div class="container">
           <h2 class="visually-hidden">Tours Catalog</h2>
           <div class="tours-grid" id="tours-grid">
-            <!-- beach-1 -->
-            <article class="tour-card" data-tour-id="tour-beach-1">
-              <div class="tour-card__img-wrapper">
-                <img src="./assets/images/collage/tropical-paradise.jpg" alt="Mystic Lagoon Resort"
-                  class="tour-card__img">
-              </div>
-
-              <div class="tour-card__content">
-
-                <div class="tour-card__meta">
-                  <span class="tour-card__category">Beach Resort</span>
-                  <span class="tour-card__duration">8 Days / 7 Nights</span>
-                </div>
-
-                <h3 class="tour-card__title">Mystic Lagoon Resort</h3>
-
-                <p class="tour-card__desc">Luxury eco-resort hidden in a private tropical bay.</p>
-                <div class="tour-card__price-box">
-                  <span class="tour-card__price-label">from</span>
-                  <span class="tour-card__price-value">$120</span>
-                  <span class="tour-card__price-unit">/ night</span>
-                </div>
-              </div>
-
-              <div class="tour-card__footer">
-                <div class="tour-card__rating">
-                  <svg class="tour-card__rating-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                    <path
-                      d="M12 17.27L18.18 21L16.54 13.97L22 9.24L14.81 8.63L12 2L9.19 8.63L2 9.24L7.46 13.97L5.82 21L12 17.27Z" />
-                  </svg>
-                  <span class="tour-card__rating-value">4.9</span>
-                </div>
-                <button class="btn-open-modal" data-action="details">Details</button>
-              </div>
-
-            </article>
-            <!-- exotic -1 -->
-            <article class="tour-card" data-tour-id="tour-beach-1">
-              <div class="tour-card__img-wrapper">
-                <img src="https://thegreenvoyage.com/wp-content/uploads/2024/01/shutterstock_2340834055.jpg.webp" alt="Serengeti Wild Safari"
-                  class="tour-card__img">
-              </div>
-
-              <div class="tour-card__content">
-
-                <div class="tour-card__meta">
-                  <span class="tour-card__category">Exotic</span>
-                  <span class="tour-card__duration">8 Days / 7 Nights</span>
-                </div>
-
-                <h3 class="tour-card__title">Serengeti Wild Safari</h3>
-
-                <p class="tour-card__desc">Unforgettable wildlife expedition in the heart of Tanzania.</p>
-                <div class="tour-card__price-box">
-                  <span class="tour-card__price-label">from</span>
-                  <span class="tour-card__price-value">$210 </span>
-                  <span class="tour-card__price-unit">/ night</span>
-                </div>
-              </div>
-
-              <div class="tour-card__footer">
-                <div class="tour-card__rating">
-                  <svg class="tour-card__rating-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                    <path
-                      d="M12 17.27L18.18 21L16.54 13.97L22 9.24L14.81 8.63L12 2L9.19 8.63L2 9.24L7.46 13.97L5.82 21L12 17.27Z" />
-                  </svg>
-                  <span class="tour-card__rating-value">4.9</span>
-                </div>
-                <button class="btn-open-modal" data-action="details">Details</button>
-              </div>
-            </article>
-            <!-- exotic-4 -->
-            <article class="tour-card" data-tour-id="tour-beach-1">
-              <div class="tour-card__img-wrapper">
-                <img src="https://images.unsplash.com/photo-1787858421430-0b9ee19a6964?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Cappadocia Balloon & Caves"
-                  class="tour-card__img">
-              </div>
-
-              <div class="tour-card__content">
-
-                <div class="tour-card__meta">
-                  <span class="tour-card__category">Exotic</span>
-                  <span class="tour-card__duration">8 Days / 7 Nights</span>
-                </div>
-
-                <h3 class="tour-card__title">Cappadocia Balloon & Caves</h3>
-
-                <p class="tour-card__desc">Magical valleys and underground cities in Central Anatolia.</p>
-                <div class="tour-card__price-box">
-                  <span class="tour-card__price-label">from</span>
-                  <span class="tour-card__price-value">$160</span>
-                  <span class="tour-card__price-unit">/ night</span>
-                </div>
-              </div>
-
-              <div class="tour-card__footer">
-                <div class="tour-card__rating">
-                  <svg class="tour-card__rating-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                    <path
-                      d="M12 17.27L18.18 21L16.54 13.97L22 9.24L14.81 8.63L12 2L9.19 8.63L2 9.24L7.46 13.97L5.82 21L12 17.27Z" />
-                  </svg>
-                  <span class="tour-card__rating-value">4.9</span>
-                </div>
-                <button class="btn-open-modal" data-action="details">Details</button>
-              </div>
-            </article>
-
-            <!-- cruise-4 -->
-            <article class="tour-card" data-tour-id="tour-beach-1">
-              <div class="tour-card__img-wrapper">
-                <img src="https://alaskatours.com/wp-content/uploads/2016/04/7-8.jpg" alt="Mystic Lagoon Resort"
-                  class="tour-card__img">
-              </div>
-
-              <div class="tour-card__content">
-
-                <div class="tour-card__meta">
-                  <span class="tour-card__category">Cruise</span>
-                  <span class="tour-card__duration">8 Days / 7 Nights</span>
-                </div>
-
-                <h3 class="tour-card__title">Alaskan Glaciers & Wildlife</h3>
-
-                <p class="tour-card__desc">A spectacular wilderness cruise along the Inside Passage.</p>
-                <div class="tour-card__price-box">
-                  <span class="tour-card__price-label">from</span>
-                  <span class="tour-card__price-value">$220</span>
-                  <span class="tour-card__price-unit">/ night</span>
-                </div>
-              </div>
-
-              <div class="tour-card__footer">
-                <div class="tour-card__rating">
-                  <svg class="tour-card__rating-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                    <path
-                      d="M12 17.27L18.18 21L16.54 13.97L22 9.24L14.81 8.63L12 2L9.19 8.63L2 9.24L7.46 13.97L5.82 21L12 17.27Z" />
-                  </svg>
-                  <span class="tour-card__rating-value">4.9</span>
-                </div>
-                <button class="btn-open-modal" data-action="details">Details</button>
-              </div>
-
-            </article>
-
-            <!-- sight-5 -->
-            <article class="tour-card" data-tour-id="tour-beach-1">
-              <div class="tour-card__img-wrapper">
-                <img src="https://www.obsidianurbexphotography.com/wp-content/uploads/2023/08/The-Lost-City-Of-Petra-Jordan-El-Khazneh-Standing-Infront.jpg" alt="Lost City of Petra & Jordan"
-                  class="tour-card__img">
-              </div>
-
-              <div class="tour-card__content">
-
-                <div class="tour-card__meta">
-                  <span class="tour-card__category">Sightseeing</span>
-                  <span class="tour-card__duration">8 Days / 7 Nights</span>
-                </div>
-
-                <h3 class="tour-card__title">Lost City of Petra & Jordan</h3>
-
-                <p class="tour-card__desc">Luxury eco-resort hidden in a private tropical bay.</p>
-                <div class="tour-card__price-box">
-                  <span class="tour-card__price-label">from</span>
-                  <span class="tour-card__price-value">$140</span>
-                  <span class="tour-card__price-unit">/ night</span>
-                </div>
-              </div>
-
-              <div class="tour-card__footer">
-                <div class="tour-card__rating">
-                  <svg class="tour-card__rating-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                    <path
-                      d="M12 17.27L18.18 21L16.54 13.97L22 9.24L14.81 8.63L12 2L9.19 8.63L2 9.24L7.46 13.97L5.82 21L12 17.27Z" />
-                  </svg>
-                  <span class="tour-card__rating-value">4.9</span>
-                </div>
-                <button class="btn-open-modal" data-action="details">Details</button>
-              </div>
-
-            </article>
-            <!-- exotic-3 6 -->
-            <article class="tour-card" data-tour-id="tour-beach-1">
-              <div class="tour-card__img-wrapper">
-                <img src="https://img.freepik.com/premium-photo/amazon-trekking-expedition-captivating-scene-trekkers-walking-through-dense-rainforest-foliage_1235831-48320.jpg?w=1060" alt="Amazon Rainforest Expedition"
-                  class="tour-card__img">
-              </div>
-
-              <div class="tour-card__content">
-
-                <div class="tour-card__meta">
-                  <span class="tour-card__category">Exotic</span>
-                  <span class="tour-card__duration">8 Days / 7 Nights</span>
-                </div>
-
-                <h3 class="tour-card__title">Amazon Rainforest Expedition</h3>
-
-                <p class="tour-card__desc">Deep jungle immersion along the mighty Amazon River in Peru.</p>
-                <div class="tour-card__price-box">
-                  <span class="tour-card__price-label">from</span>
-                  <span class="tour-card__price-value">$140</span>
-                  <span class="tour-card__price-unit">/ night</span>
-                </div>
-              </div>
-
-              <div class="tour-card__footer">
-                <div class="tour-card__rating">
-                  <svg class="tour-card__rating-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                    <path
-                      d="M12 17.27L18.18 21L16.54 13.97L22 9.24L14.81 8.63L12 2L9.19 8.63L2 9.24L7.46 13.97L5.82 21L12 17.27Z" />
-                  </svg>
-                  <span class="tour-card__rating-value">4.9</span>
-                </div>
-                <button class="btn-open-modal" data-action="details">Details</button>
-              </div>
-            </article>
-            <!-- 7 beach-5 -->
-            <article class="tour-card" data-tour-id="tour-beach-1">
-              <div class="tour-card__img-wrapper">
-                <img src="https://th.bing.com/th/id/R.2694c3a28428e0cee7d25c29375183ac?rik=fyE4TjC5RFAIOw&pid=ImgRaw&r=0" alt="El Nido Hidden Lagoons" 
-                  class="tour-card__img">
-              </div>
-
-              <div class="tour-card__content">
-
-                <div class="tour-card__meta">
-                  <span class="tour-card__category">Beach</span>
-                  <span class="tour-card__duration">8 Days / 7 Nights</span>
-                </div>
-
-                <h3 class="tour-card__title">El Nido Hidden Lagoons</h3>
-
-                <p class="tour-card__desc">Island hopping through dramatic limestone formations in the Philippines.</p>
-                <div class="tour-card__price-box">
-                  <span class="tour-card__price-label">from</span>
-                  <span class="tour-card__price-value">$140</span>
-                  <span class="tour-card__price-unit">/ night</span>
-                </div>
-              </div>
-
-              <div class="tour-card__footer">
-                <div class="tour-card__rating">
-                  <svg class="tour-card__rating-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                    <path
-                      d="M12 17.27L18.18 21L16.54 13.97L22 9.24L14.81 8.63L12 2L9.19 8.63L2 9.24L7.46 13.97L5.82 21L12 17.27Z" />
-                  </svg>
-                  <span class="tour-card__rating-value">4.9</span>
-                </div>
-                <button class="btn-open-modal" data-action="details">Details</button>
-              </div>
-
-            </article>
-            <!-- 8-sight-1 -->
-            <article class="tour-card" data-tour-id="tour-beach-1">
-              <div class="tour-card__img-wrapper">
-                <img src="https://images.unsplash.com/photo-1785845333757-cbbd4fc224af?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Ancient Kyoto Shrines"
-                  class="tour-card__img">
-              </div>
-
-              <div class="tour-card__content">
-
-                <div class="tour-card__meta">
-                  <span class="tour-card__category">Sightseeing</span>
-                  <span class="tour-card__duration">8 Days / 7 Nights</span>
-                </div>
-
-                <h3 class="tour-card__title">Ancient Kyoto Shrines</h3>
-
-                <p class="tour-card__desc">Immersive cultural journey through Japan's historic capital.</p>
-                <div class="tour-card__price-box">
-                  <span class="tour-card__price-label">from</span>
-                  <span class="tour-card__price-value">$95</span>
-                  <span class="tour-card__price-unit">/ night</span>
-                </div>
-              </div>
-
-              <div class="tour-card__footer">
-                <div class="tour-card__rating">
-                  <svg class="tour-card__rating-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                    <path
-                      d="M12 17.27L18.18 21L16.54 13.97L22 9.24L14.81 8.63L12 2L9.19 8.63L2 9.24L7.46 13.97L5.82 21L12 17.27Z" />
-                  </svg>
-                  <span class="tour-card__rating-value">4.9</span>
-                </div>
-                <button class="btn-open-modal" data-action="details">Details</button>
-              </div>
-
-            </article>
+            
+              
           </div>
           <button class="show-more__btn">Show more</button>
         </div>
@@ -451,6 +167,12 @@
       </div>
       <div class="author">&copy; Evgeniia Korolova 2026</div>
     </footer>
+
+    <dialog class="tour-modal" id="tour-modal">      
+    </dialog>
+
+    <script type="module" src="./js/main.js"></script>
+    <script type="module" src="./js/tours.js"></script>
 
   </body>
 
