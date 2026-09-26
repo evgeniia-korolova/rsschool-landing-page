@@ -69,6 +69,7 @@ class TourModalView {
         <span class="tour-modal__category">${categoryLabel}</span>
         
         <p class="tour-modal__desc">${tourData.longDescription}</p>
+        <p class="tour-modal__desc">Maximum 30 nights and 3 guests</p>
         
         <div class="tour-modal__parameters">
           
@@ -124,9 +125,24 @@ class TourModalView {
     if (nightsInput) {
       nightsInput.addEventListener('input', (e) => {
         let val = parseInt(e.target.value);
+
+        if (e.target.value === '') return; 
+        
+
         if (isNaN(val) || val < 1) val = 1;
+        if (val > 30) val = 30;
+
+        e.target.value = val;
         this.nightsCount = val;
         this.updateTotalPrice();
+      });
+
+      nightsInput.addEventListener('blur', (e) => {
+        if (e.target.value === '') {
+          e.target.value = 1;
+          this.nightsCount = 1;
+          this.updateTotalPrice();
+        }
       });
     }
 
@@ -134,9 +150,23 @@ class TourModalView {
     if (guestsInput) {
       guestsInput.addEventListener('input', (e) => {
         let val = parseInt(e.target.value);
+
+        if (e.target.value === '') return;
+
         if (isNaN(val) || val < 1) val = 1;
+        if (val > 3) val = 3;
+
+        e.target.value = val;
         this.guestsCount = val;
         this.updateTotalPrice();
+      });
+
+      guestsInput.addEventListener('blur', (e) => {
+        if (e.target.value === '') {
+          e.target.value = 1;
+          this.guestsCount = 1;
+          this.updateTotalPrice();
+        }
       });
     }
 
