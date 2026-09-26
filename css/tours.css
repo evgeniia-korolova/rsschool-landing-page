@@ -357,9 +357,11 @@ body:has(dialog[open]) {
   transition: transform 0.2s ease, color 0.2s ease;
 }
 
-.tour-modal__close-btn:hover {
-  transform: rotate(90deg);
-  color: var(--color-accent);
+@media(hover: hover) {
+  .tour-modal__close-btn:hover {
+    transform: rotate(90deg);
+    color: var(--color-accent);
+  }
 }
 
 .tour-modal__title {
@@ -449,6 +451,10 @@ body:has(dialog[open]) {
   display: flex;
   flex-direction: column;
   gap: 10px;
+}
+
+.modal-excursion-checkbox {
+  accent-color: var(--color-accent);
 }
 
 /* Футер модалки */

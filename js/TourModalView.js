@@ -74,7 +74,7 @@ class TourModalView {
           
           <!-- ПАРАМЕТР 1: ВЫБОР КОЛИЧЕСТВА НОЧЕЙ -->
           <div class="tour-modal__param-row">
-            <label for="modal-nights" class="tour-modal__label">Duration (Nights):</label>
+            <label for="modal-nights" class="tour-modal__label">Duration (Nights): (${tourData.basePricePerNight} $/night)</label>
             <input type="number" id="modal-nights" class="tour-modal__input-nights" min="1" max="30" value="${this.nightsCount}">
           </div>
 
@@ -159,8 +159,8 @@ class TourModalView {
   }
 
   updateTotalPrice() {
-    let total =
-      this.currentTour.basePricePerNight * this.currentTour.durationNights;
+    let total =      
+      this.currentTour.basePricePerNight * this.nightsCount;
 
     if (this.includeTransfer) {
       total += this.currentTour.transferPricePerPerson * this.guestsCount;
