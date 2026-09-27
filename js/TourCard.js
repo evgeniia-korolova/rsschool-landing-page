@@ -18,10 +18,13 @@ class TourCard {
     cardEl.classList.add('tour-card');
     cardEl.setAttribute('data-tour-id', this.data.id);
     cardEl.setAttribute('data-category', this.data.category);
+
+    const fallbackImage = '../assets/images/placeholder.webp'; 
     
     cardEl.innerHTML = `
       <div class="tour-card__img-wrapper">
-        <img src="${this.data.image}" alt="${this.data.title}" class="tour-card__img" loading="lazy">
+        <img src="${this.data.image}" alt="${this.data.title}" class="tour-card__img" loading="lazy"
+        onerror="this.onerror=null; this.src='${fallbackImage}';">
       </div>
 
       <div class="tour-card__content">

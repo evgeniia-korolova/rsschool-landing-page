@@ -17,22 +17,73 @@
     ]
   },
   {
-    "id": "tour-beach-2",
-    "category": "beach",
-    "title": "Maldives Overwater Sanctuary",
-    "shortDescription": "Pure luxury in a private villa directly above the turquoise ocean.",
-    "longDescription": "Experience the ultimate dream holiday. Wake up to endless ocean views, step straight into the warm water from your private deck, and enjoy world-class overwater spa treatments and fine dining under the stars.",
-    "image": "https://www.architectandinteriorsindia.com/cloud/2025/09/02/h0zXgNh9-Soneva-Jani-1-Bedroom-Water-Reserve-with-Slide-_Villa-90_1-1200x1364.jpg",
+    "id": "tour-sight-1",
+    "category": "sightseeing",
+    "title": "Ancient Kyoto Shrines",
+    "shortDescription": "Immersive cultural journey through Japan's historic capital.",
+    "longDescription": "Walk down the historic streets of Kyoto, visit iconic golden pavilions, and experience authentic tea ceremonies. Perfect for travelers seeking deep cultural insights, architectural marvels, and photography spots.",
+    "image": "https://images.unsplash.com/photo-1785845333757-cbbd4fc224af?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "rating": 4.8,
+    "durationText": "6 Days / 5 Nights",
+    "durationNights": 5,
+    "basePricePerNight": 95,
+    "transferPricePerPerson": 15,
+    "excursions": [
+      {"id": "exc-3", "name": "Geisha District Evening Tour", "price": 60},
+      {"id": "exc-4", "name": "Bamboo Forest Sunrise Hike", "price": 35}
+    ]
+  },
+  {
+    "id": "tour-exotic-1",
+    "category": "exotic",
+    "title": "Serengeti Wild Safari",
+    "shortDescription": "Unforgettable wildlife expedition in the heart of Tanzania.",
+    "longDescription": "Witness the Great Migration firsthand. Stay in luxury tented camps, embark on daily 4x4 game drives guided by local Maasai experts, and fall asleep to the raw sounds of the African savannah.",
+    "image": "https://thegreenvoyage.com/wp-content/uploads/2024/01/shutterstock_2340834055.jpg.webp",
     "rating": 5.0,
     "durationText": "7 Days / 6 Nights",
     "durationNights": 6,
-    "basePricePerNight": 250,
-    "transferPricePerPerson": 80,
+    "basePricePerNight": 210,
+    "transferPricePerPerson": 55,
     "excursions": [
-      {"id": "exc-35", "name": "Manta Ray Diving Expedition", "price": 120},
-      {"id": "exc-36", "name": "Private Sandbank Romantic Dinner", "price": 150}
+      {"id": "exc-5", "name": "Hot Air Balloon Sunrise Flight", "price": 150},
+      {"id": "exc-6", "name": "Night Game Drive with Tracker", "price": 85}
     ]
   },
+  {
+    "id": "tour-sight-3",
+    "category": "sightseeing",
+    "title": "Secrets of Imperial Paris",
+    "shortDescription": "Art, history, and royal architecture in the heart of France.",
+    "longDescription": "Discover the layers of Parisian history. From the Gothic majesty of Sainte-Chapelle to the decadent halls of the Palace of Versailles, this tour blends iconic sights with hidden artistic gems.",
+    "image": "https://images.unsplash.com/photo-1783692218796-cf4ddfd0d877?q=80&w=685&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "rating": 4.7,
+    "durationText": "6 Days / 5 Nights",
+    "durationNights": 5,
+    "basePricePerNight": 130,
+    "transferPricePerPerson": 25,
+    "excursions": [
+      {"id": "exc-19", "name": "Louvre Museum Private Night Tour", "price": 80},
+      {"id": "exc-20", "name": "Seine River Dinner Cruise", "price": 75}
+    ]
+  },
+  {
+    "id": "tour-cruise-4",
+    "category": "cruise",
+    "title": "Alaskan Glaciers & Wildlife",
+    "shortDescription": "A spectacular wilderness cruise along the Inside Passage.",
+    "longDescription": "A cruise for true adventurers. Watch massive chunks of ice calve from Glacier Bay, spot humpback whales from the observation lounge, and experience the rich gold-rush history of Ketchikan and Juneau.",
+    "image": "https://alaskatours.com/wp-content/uploads/2016/04/7-8.jpg",
+    "rating": 4.9,
+    "durationText": "9 Days / 8 Nights",
+    "durationNights": 8,
+    "basePricePerNight": 220,
+    "transferPricePerPerson": 60,
+    "excursions": [
+      {"id": "exc-33", "name": "Mendenhall Glacier Helicopter Tour", "price": 190},
+      {"id": "exc-34", "name": "Juneau Whale Watching Eco-Cruise", "price": 80}
+    ]
+  },  
   {
     "id": "tour-beach-3",
     "category": "beach",
@@ -84,23 +135,7 @@
       {"id": "exc-42", "name": "Zipline Between Tropical Islands", "price": 30}
     ]
   },
-  {
-    "id": "tour-sight-1",
-    "category": "sightseeing",
-    "title": "Ancient Kyoto Shrines",
-    "shortDescription": "Immersive cultural journey through Japan's historic capital.",
-    "longDescription": "Walk down the historic streets of Kyoto, visit iconic golden pavilions, and experience authentic tea ceremonies. Perfect for travelers seeking deep cultural insights, architectural marvels, and photography spots.",
-    "image": "https://images.unsplash.com/photo-1785845333757-cbbd4fc224af?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    "rating": 4.8,
-    "durationText": "6 Days / 5 Nights",
-    "durationNights": 5,
-    "basePricePerNight": 95,
-    "transferPricePerPerson": 15,
-    "excursions": [
-      {"id": "exc-3", "name": "Geisha District Evening Tour", "price": 60},
-      {"id": "exc-4", "name": "Bamboo Forest Sunrise Hike", "price": 35}
-    ]
-  },
+  
   {
     "id": "tour-sight-2",
     "category": "sightseeing",
@@ -119,22 +154,23 @@
     ]
   },
   {
-    "id": "tour-sight-3",
-    "category": "sightseeing",
-    "title": "Secrets of Imperial Paris",
-    "shortDescription": "Art, history, and royal architecture in the heart of France.",
-    "longDescription": "Discover the layers of Parisian history. From the Gothic majesty of Sainte-Chapelle to the decadent halls of the Palace of Versailles, this tour blends iconic sights with hidden artistic gems.",
-    "image": "https://images.unsplash.com/photo-1783692218796-cf4ddfd0d877?q=80&w=685&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    "rating": 4.7,
-    "durationText": "6 Days / 5 Nights",
-    "durationNights": 5,
-    "basePricePerNight": 130,
-    "transferPricePerPerson": 25,
+    "id": "tour-beach-2",
+    "category": "beach",
+    "title": "Maldives Overwater Sanctuary",
+    "shortDescription": "Pure luxury in a private villa directly above the turquoise ocean.",
+    "longDescription": "Experience the ultimate dream holiday. Wake up to endless ocean views, step straight into the warm water from your private deck, and enjoy world-class overwater spa treatments and fine dining under the stars.",
+    "image": "https://www.architectandinteriorsindia.com/cloud/2025/09/02/h0zXgNh9-Soneva-Jani-1-Bedroom-Water-Reserve-with-Slide-_Villa-90_1-1200x1364.jpg",
+    "rating": 5.0,
+    "durationText": "7 Days / 6 Nights",
+    "durationNights": 6,
+    "basePricePerNight": 250,
+    "transferPricePerPerson": 80,
     "excursions": [
-      {"id": "exc-19", "name": "Louvre Museum Private Night Tour", "price": 80},
-      {"id": "exc-20", "name": "Seine River Dinner Cruise", "price": 75}
+      {"id": "exc-35", "name": "Manta Ray Diving Expedition", "price": 120},
+      {"id": "exc-36", "name": "Private Sandbank Romantic Dinner", "price": 150}
     ]
   },
+  
   {
     "id": "tour-sight-4",
     "category": "sightseeing",
@@ -234,40 +270,8 @@
       {"id": "exc-32", "name": "St. Maarten Sailing & Rum Tasting", "price": 50}
     ]
   },
-  {
-    "id": "tour-cruise-4",
-    "category": "cruise",
-    "title": "Alaskan Glaciers & Wildlife",
-    "shortDescription": "A spectacular wilderness cruise along the Inside Passage.",
-    "longDescription": "A cruise for true adventurers. Watch massive chunks of ice calve from Glacier Bay, spot humpback whales from the observation lounge, and experience the rich gold-rush history of Ketchikan and Juneau.",
-    "image": "https://alaskatours.com/wp-content/uploads/2016/04/7-8.jpg",
-    "rating": 4.9,
-    "durationText": "9 Days / 8 Nights",
-    "durationNights": 8,
-    "basePricePerNight": 220,
-    "transferPricePerPerson": 60,
-    "excursions": [
-      {"id": "exc-33", "name": "Mendenhall Glacier Helicopter Tour", "price": 190},
-      {"id": "exc-34", "name": "Juneau Whale Watching Eco-Cruise", "price": 80}
-    ]
-  },
-  {
-    "id": "tour-exotic-1",
-    "category": "exotic",
-    "title": "Serengeti Wild Safari",
-    "shortDescription": "Unforgettable wildlife expedition in the heart of Tanzania.",
-    "longDescription": "Witness the Great Migration firsthand. Stay in luxury tented camps, embark on daily 4x4 game drives guided by local Maasai experts, and fall asleep to the raw sounds of the African savannah.",
-    "image": "https://thegreenvoyage.com/wp-content/uploads/2024/01/shutterstock_2340834055.jpg.webp",
-    "rating": 5.0,
-    "durationText": "7 Days / 6 Nights",
-    "durationNights": 6,
-    "basePricePerNight": 210,
-    "transferPricePerPerson": 55,
-    "excursions": [
-      {"id": "exc-5", "name": "Hot Air Balloon Sunrise Flight", "price": 150},
-      {"id": "exc-6", "name": "Night Game Drive with Tracker", "price": 85}
-    ]
-  },
+  
+  
   {
     "id": "tour-exotic-2",
     "category": "exotic",
