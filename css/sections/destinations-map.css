@@ -22,7 +22,7 @@
 .map-wrapper {
   position: relative;
   width: 100%;
-  background-color: var(--bg-secondary);
+  background-color: var(--bg-map);
   border-radius: 16px;
   overflow: hidden;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
@@ -34,6 +34,8 @@
   height: auto;
   aspect-ratio: 16 / 9;
   will-change: transform;
+
+  margin-top: 40px; 
 }
 
 /* Подложка */
