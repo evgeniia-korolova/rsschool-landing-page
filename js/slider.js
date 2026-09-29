@@ -14,6 +14,9 @@ class TravelSlider {
 
     this.isTransitioning = false;
 
+    this.touchStartX = 0;
+    this.touchEndX = 0;
+
     if (!this.track || !this.prevBtn || !this.nextBtn) return;
 
     this.init();
@@ -24,6 +27,26 @@ class TravelSlider {
 
     this.nextBtn.addEventListener('click', () => this.next());
     this.prevBtn.addEventListener('click', () => this.prev());
+
+    this.track.addEventListener('touchstart', (e) => {
+      this.touchStartX = e.changedTouches[0].screenX;
+    }, { passive: true });
+
+    this.track.addEventListener('touchend', (e) => {
+      this.touchEndX = e.changedTouches[0].screenX;
+      this.handleTouch();
+    }, { passive: true });
+  }
+
+  handleTouch() {
+    const swipeDistance = this.touchStartX - this.touchEndX;
+    const minSwipeDistance = 50; 
+
+    if (swipeDistance > minSwipeDistance) {      
+      this.next();
+    } else if (swipeDistance < -minSwipeDistance) {      
+      this.prev();
+    }
   }
 
   getShiftWidth() {
