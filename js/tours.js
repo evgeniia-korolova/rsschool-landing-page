@@ -120,6 +120,13 @@ class ToursController {
 
         this.model.setCategory(selectedCategory);
         this.renderCurrentState(false);
+
+        if (this.view.grid) {
+          this.view.grid.scrollIntoView({ 
+            behavior: 'smooth', 
+            block: 'start' 
+          });
+        }
       });
     });
 
