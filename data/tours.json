@@ -5,7 +5,7 @@
     "title": "Mystic Lagoon Resort",
     "shortDescription": "Luxury eco-resort hidden in a private tropical bay.",
     "longDescription": "Escape to a secluded paradise surrounded by crystal-clear waters and lush rainforest. This tour offers ultimate relaxation with private villa accommodations, wellness treatments, and pristine white-sand beaches right at your doorstep.",
-    "image": "https://unsplash.com/photos/sailboat-and-rocky-island-at-beach-eoJ8Y8eA4vc",
+    "image": "https://as2.ftcdn.net/v2/jpg/04/97/13/03/1000_F_497130354_ZmJ2j4J1YZHIRtevTKNR27v6TVIuoaKI.jpg",
     "rating": 4.9,
     "durationText": "8 Days / 7 Nights",
     "durationNights": 7,
@@ -14,74 +14,6 @@
     "excursions": [
       {"id": "exc-1", "name": "Coral Reef Snorkeling", "price": 45},
       {"id": "exc-2", "name": "Sunset Catamaran Cruise", "price": 70}
-    ]
-  },
-  {
-    "id": "tour-beach-2",
-    "category": "beach",
-    "title": "Maldives Overwater Sanctuary",
-    "shortDescription": "Pure luxury in a private villa directly above the turquoise ocean.",
-    "longDescription": "Experience the ultimate dream holiday. Wake up to endless ocean views, step straight into the warm water from your private deck, and enjoy world-class overwater spa treatments and fine dining under the stars.",
-    "image": "",
-    "rating": 5.0,
-    "durationText": "7 Days / 6 Nights",
-    "durationNights": 6,
-    "basePrice": 250,
-    "transferPricePerPerson": 80,
-    "excursions": [
-      {"id": "exc-35", "name": "Manta Ray Diving Expedition", "price": 120},
-      {"id": "exc-36", "name": "Private Sandbank Romantic Dinner", "price": 150}
-    ]
-  },
-  {
-    "id": "tour-beach-3",
-    "category": "beach",
-    "title": "Bali Secret Cliffs & Escapes",
-    "shortDescription": "Breathtaking white sand beaches tucked beneath dramatic cliffs.",
-    "longDescription": "Discover the hidden side of Bali's coastline. Stay in a gorgeous boutique resort in Uluwatu, surf some of the world's best waves, explore secret cave beaches, and watch magical sunsets from clifftop temples.",
-    "image": "",
-    "rating": 4.8,
-    "durationText": "8 Days / 7 Nights",
-    "durationNights": 7,
-    "basePrice": 90,
-    "transferPricePerPerson": 20,
-    "excursions": [
-      {"id": "exc-37", "name": "Nusa Penida Island Day Trip", "price": 60},
-      {"id": "exc-38", "name": "Traditional Balinese Spa Ritual", "price": 40}
-    ]
-  },
-  {
-    "id": "tour-beach-4",
-    "category": "beach",
-    "title": "Santorini Sunsets & Caldera",
-    "shortDescription": "Volcanic black sands and iconic whitewashed luxury cliff resorts.",
-    "longDescription": "Immerse yourself in the romance of the Aegean Sea. Relax on unique black and red sand volcanic beaches, explore charming villages, and enjoy breathtaking sunsets over the flooded volcanic caldera from your infinity pool.",
-    "image": "",
-    "rating": 4.9,
-    "durationText": "6 Days / 5 Nights",
-    "durationNights": 5,
-    "basePrice": 175,
-    "transferPricePerPerson": 35,
-    "excursions": [
-      {"id": "exc-39", "name": "Volcano & Hot Springs Boat Tour", "price": 50},
-      {"id": "exc-40", "name": "Wine Tasting in Traditional Vineyard", "price": 65}
-    ]
-  },
-  {
-    "id": "tour-beach-5",
-    "category": "beach",
-    "title": "El Nido Hidden Lagoons",
-    "shortDescription": "Island hopping through dramatic limestone formations in the Philippines.",
-    "longDescription": "A paradise for nature lovers and adventurers. Kayak through secret lagoons hidden behind towering limestone walls, swim in crystal-clear emerald waters, and relax on pristine beaches untouched by crowds.",
-    "image": "https://th.bing.com/th/id/R.2694c3a28428e0cee7d25c29375183ac?rik=fyE4TjC5RFAIOw&pid=ImgRaw&r=0",
-    "rating": 5.0,
-    "durationText": "7 Days / 6 Nights",
-    "durationNights": 6,
-    "basePrice": 110,
-    "transferPricePerPerson": 30,
-    "excursions": [
-      {"id": "exc-41", "name": "Premium Island Hopping Tour A", "price": 45},
-      {"id": "exc-42", "name": "Zipline Between Tropical Islands", "price": 30}
     ]
   },
   {
@@ -102,20 +34,20 @@
     ]
   },
   {
-    "id": "tour-sight-2",
-    "category": "sightseeing",
-    "title": "Renaissance Wonders of Rome",
-    "shortDescription": "A deep dive into the history, art, and soul of the Eternal City.",
-    "longDescription": "Explore Rome like an insider. Skip the lines at the Colosseum and Vatican Museums, walk through the historic Roman Forum, and enjoy the vibrant atmosphere of hidden squares known only to locals.",
-    "image": "https://plus.unsplash.com/premium_photo-1721163121835-70e361a3c306?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    "rating": 4.9,
-    "durationText": "5 Days / 4 Nights",
-    "durationNights": 4,
-    "basePrice": 115,
-    "transferPricePerPerson": 20,
+    "id": "tour-exotic-1",
+    "category": "exotic",
+    "title": "Serengeti Wild Safari",
+    "shortDescription": "Unforgettable wildlife expedition in the heart of Tanzania.",
+    "longDescription": "Witness the Great Migration firsthand. Stay in luxury tented camps, embark on daily 4x4 game drives guided by local Maasai experts, and fall asleep to the raw sounds of the African savannah.",
+    "image": "https://thegreenvoyage.com/wp-content/uploads/2024/01/shutterstock_2340834055.jpg.webp",
+    "rating": 5.0,
+    "durationText": "7 Days / 6 Nights",
+    "durationNights": 6,
+    "basePricePerNight": 210,
+    "transferPricePerPerson": 55,
     "excursions": [
-      {"id": "exc-17", "name": "Authentic Pasta & Gelato Masterclass", "price": 55},
-      {"id": "exc-18", "name": "Catacombs & Appian Way E-Bike Tour", "price": 45}
+      {"id": "exc-5", "name": "Hot Air Balloon Sunrise Flight", "price": 150},
+      {"id": "exc-6", "name": "Night Game Drive with Tracker", "price": 85}
     ]
   },
   {
@@ -128,13 +60,117 @@
     "rating": 4.7,
     "durationText": "6 Days / 5 Nights",
     "durationNights": 5,
-    "basePrice": 130,
+    "basePricePerNight": 130,
     "transferPricePerPerson": 25,
     "excursions": [
       {"id": "exc-19", "name": "Louvre Museum Private Night Tour", "price": 80},
       {"id": "exc-20", "name": "Seine River Dinner Cruise", "price": 75}
     ]
   },
+  {
+    "id": "tour-cruise-4",
+    "category": "cruise",
+    "title": "Alaskan Glaciers & Wildlife",
+    "shortDescription": "A spectacular wilderness cruise along the Inside Passage.",
+    "longDescription": "A cruise for true adventurers. Watch massive chunks of ice calve from Glacier Bay, spot humpback whales from the observation lounge, and experience the rich gold-rush history of Ketchikan and Juneau.",
+    "image": "https://alaskatours.com/wp-content/uploads/2016/04/7-8.jpg",
+    "rating": 4.9,
+    "durationText": "9 Days / 8 Nights",
+    "durationNights": 8,
+    "basePricePerNight": 220,
+    "transferPricePerPerson": 60,
+    "excursions": [
+      {"id": "exc-33", "name": "Mendenhall Glacier Helicopter Tour", "price": 190},
+      {"id": "exc-34", "name": "Juneau Whale Watching Eco-Cruise", "price": 80}
+    ]
+  },  
+  {
+    "id": "tour-beach-3",
+    "category": "beach",
+    "title": "Bali Secret Cliffs & Escapes",
+    "shortDescription": "Breathtaking white sand beaches tucked beneath dramatic cliffs.",
+    "longDescription": "Discover the hidden side of Bali's coastline. Stay in a gorgeous boutique resort in Uluwatu, surf some of the world's best waves, explore secret cave beaches, and watch magical sunsets from clifftop temples.",
+    "image": "https://thumbs.dreamstime.com/b/bali-indonesia-october-showing-beautiful-beach-towering-cliffs-decorated-lush-green-vegetation-suluban-beach-bali-349267755.jpg",
+    "rating": 4.8,
+    "durationText": "8 Days / 7 Nights",
+    "durationNights": 7,
+    "basePricePerNight": 90,
+    "transferPricePerPerson": 20,
+    "excursions": [
+      {"id": "exc-37", "name": "Nusa Penida Island Day Trip", "price": 60},
+      {"id": "exc-38", "name": "Traditional Balinese Spa Ritual", "price": 40}
+    ]
+  },
+  {
+    "id": "tour-beach-4",
+    "category": "beach",
+    "title": "Santorini Sunsets & Caldera",
+    "shortDescription": "Volcanic black sands and iconic whitewashed luxury cliff resorts.",
+    "longDescription": "Immerse yourself in the romance of the Aegean Sea. Relax on unique black and red sand volcanic beaches, explore charming villages, and enjoy breathtaking sunsets over the flooded volcanic caldera from your infinity pool.",
+    "image": "https://thumbs.dreamstime.com/b/oia-village-santorini-island-sunset-greece-oia-sunset-santorini-island-greece-ai-generated-oia-village-santorini-island-296429399.jpg",
+    "rating": 4.9,
+    "durationText": "6 Days / 5 Nights",
+    "durationNights": 5,
+    "basePricePerNight": 175,
+    "transferPricePerPerson": 35,
+    "excursions": [
+      {"id": "exc-39", "name": "Volcano & Hot Springs Boat Tour", "price": 50},
+      {"id": "exc-40", "name": "Wine Tasting in Traditional Vineyard", "price": 65}
+    ]
+  },
+  {
+    "id": "tour-beach-5",
+    "category": "beach",
+    "title": "El Nido Hidden Lagoons",
+    "shortDescription": "Island hopping through dramatic limestone formations in the Philippines.",
+    "longDescription": "A paradise for nature lovers and adventurers. Kayak through secret lagoons hidden behind towering limestone walls, swim in crystal-clear emerald waters, and relax on pristine beaches untouched by crowds.",
+    "image": "https://th.bing.com/th/id/R.2694c3a28428e0cee7d25c29375183ac?rik=fyE4TjC5RFAIOw&pid=ImgRaw&r=0",
+    "rating": 5.0,
+    "durationText": "7 Days / 6 Nights",
+    "durationNights": 6,
+    "basePricePerNight": 110,
+    "transferPricePerPerson": 30,
+    "excursions": [
+      {"id": "exc-41", "name": "Premium Island Hopping Tour A", "price": 45},
+      {"id": "exc-42", "name": "Zipline Between Tropical Islands", "price": 30}
+    ]
+  },
+  
+  {
+    "id": "tour-sight-2",
+    "category": "sightseeing",
+    "title": "Renaissance Wonders of Rome",
+    "shortDescription": "A deep dive into the history, art, and soul of the Eternal City.",
+    "longDescription": "Explore Rome like an insider. Skip the lines at the Colosseum and Vatican Museums, walk through the historic Roman Forum, and enjoy the vibrant atmosphere of hidden squares known only to locals.",
+    "image": "https://plus.unsplash.com/premium_photo-1721163121835-70e361a3c306?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "rating": 4.9,
+    "durationText": "5 Days / 4 Nights",
+    "durationNights": 4,
+    "basePricePerNight": 115,
+    "transferPricePerPerson": 20,
+    "excursions": [
+      {"id": "exc-17", "name": "Authentic Pasta & Gelato Masterclass", "price": 55},
+      {"id": "exc-18", "name": "Catacombs & Appian Way E-Bike Tour", "price": 45}
+    ]
+  },
+  {
+    "id": "tour-beach-2",
+    "category": "beach",
+    "title": "Maldives Overwater Sanctuary",
+    "shortDescription": "Pure luxury in a private villa directly above the turquoise ocean.",
+    "longDescription": "Experience the ultimate dream holiday. Wake up to endless ocean views, step straight into the warm water from your private deck, and enjoy world-class overwater spa treatments and fine dining under the stars.",
+    "image": "https://www.architectandinteriorsindia.com/cloud/2025/09/02/h0zXgNh9-Soneva-Jani-1-Bedroom-Water-Reserve-with-Slide-_Villa-90_1-1200x1364.jpg",
+    "rating": 5.0,
+    "durationText": "7 Days / 6 Nights",
+    "durationNights": 6,
+    "basePricePerNight": 250,
+    "transferPricePerPerson": 80,
+    "excursions": [
+      {"id": "exc-35", "name": "Manta Ray Diving Expedition", "price": 120},
+      {"id": "exc-36", "name": "Private Sandbank Romantic Dinner", "price": 150}
+    ]
+  },
+  
   {
     "id": "tour-sight-4",
     "category": "sightseeing",
@@ -145,7 +181,7 @@
     "rating": 5.0,
     "durationText": "7 Days / 6 Nights",
     "durationNights": 6,
-    "basePrice": 165,
+    "basePricePerNight": 165,
     "transferPricePerPerson": 40,
     "excursions": [
       {"id": "exc-21", "name": "Maras Salt Mines Guided Hike", "price": 30},
@@ -162,7 +198,7 @@
     "rating": 4.9,
     "durationText": "6 Days / 5 Nights",
     "durationNights": 5,
-    "basePrice": 140,
+    "basePricePerNight": 140,
     "transferPricePerPerson": 35,
     "excursions": [
       {"id": "exc-23", "name": "Petra by Night Candlelight Experience", "price": 45},
@@ -179,7 +215,7 @@
     "rating": 4.8,
     "durationText": "5 Days / 4 Nights",
     "durationNights": 4,
-    "basePrice": 85,
+    "basePricePerNight": 85,
     "transferPricePerPerson": 15,
     "excursions": [
       {"id": "exc-25", "name": "Jaipur Palace Private Photo Tour", "price": 35},
@@ -210,7 +246,7 @@
     "rating": 4.9,
     "durationText": "8 Days / 7 Nights",
     "durationNights": 7,
-    "basePrice": 160,
+    "basePricePerNight": 160,
     "transferPricePerPerson": 45,
     "excursions": [
       {"id": "exc-29", "name": "Flåm Railway Scenic Train Ride", "price": 75},
@@ -227,54 +263,22 @@
     "rating": 4.8,
     "durationText": "6 Days / 5 Nights",
     "durationNights": 5,
-    "basePrice": 125,
+    "basePricePerNight": 125,
     "transferPricePerPerson": 30,
     "excursions": [
       {"id": "exc-31", "name": "Private Island Beach Cabana Rental", "price": 85},
       {"id": "exc-32", "name": "St. Maarten Sailing & Rum Tasting", "price": 50}
     ]
   },
-  {
-    "id": "tour-cruise-4",
-    "category": "cruise",
-    "title": "Alaskan Glaciers & Wildlife",
-    "shortDescription": "A spectacular wilderness cruise along the Inside Passage.",
-    "longDescription": "A cruise for true adventurers. Watch massive chunks of ice calve from Glacier Bay, spot humpback whales from the observation lounge, and experience the rich gold-rush history of Ketchikan and Juneau.",
-    "image": "https://alaskatours.com/wp-content/uploads/2016/04/7-8.jpg",
-    "rating": 4.9,
-    "durationText": "9 Days / 8 Nights",
-    "durationNights": 8,
-    "basePrice": 220,
-    "transferPricePerPerson": 60,
-    "excursions": [
-      {"id": "exc-33", "name": "Mendenhall Glacier Helicopter Tour", "price": 190},
-      {"id": "exc-34", "name": "Juneau Whale Watching Eco-Cruise", "price": 80}
-    ]
-  },
-  {
-    "id": "tour-exotic-1",
-    "category": "exotic",
-    "title": "Serengeti Wild Safari",
-    "shortDescription": "Unforgettable wildlife expedition in the heart of Tanzania.",
-    "longDescription": "Witness the Great Migration firsthand. Stay in luxury tented camps, embark on daily 4x4 game drives guided by local Maasai experts, and fall asleep to the raw sounds of the African savannah.",
-    "image": "https://thegreenvoyage.com/wp-content/uploads/2024/01/shutterstock_2340834055.jpg.webp",
-    "rating": 5.0,
-    "durationText": "7 Days / 6 Nights",
-    "durationNights": 6,
-    "basePricePerNight": 210,
-    "transferPricePerPerson": 55,
-    "excursions": [
-      {"id": "exc-5", "name": "Hot Air Balloon Sunrise Flight", "price": 150},
-      {"id": "exc-6", "name": "Night Game Drive with Tracker", "price": 85}
-    ]
-  },
+  
+  
   {
     "id": "tour-exotic-2",
     "category": "exotic",
     "title": "Patagonia Peak Trekking",
     "shortDescription": "Challenging mountain route around Mount Fitz Roy.",
     "longDescription": "A dream journey for mountain lovers. Hike through breathtaking glacial valleys, drink pure water from mountain streams, and marvel at the granite towers of Argentine Patagonia.",
-    "image": "https://unsplash.com/photos/a-very-tall-tree-with-lots-of-branches-RV6BnsYakc8",
+    "image": "https://img.freepik.com/premium-photo/trekking-through-rugged-terrain-patagonia-surrounded-by-breathtaking-vistas_118124-178551.jpg",
     "rating": 4.9,
     "durationText": "9 Days / 7 Nights",
     "durationNights": 8,
@@ -295,7 +299,7 @@
     "rating": 4.8,
     "durationText": "6 Days / 5 Nights",
     "durationNights": 5,
-    "basePrice": 145,
+    "basePricePerNight": 145,
     "transferPricePerPerson": 45,
     "excursions": [
       {"id": "exc-9", "name": "Piranha Fishing & Village Visit", "price": 50},
@@ -312,7 +316,7 @@
     "rating": 4.9,
     "durationText": "4 Days / 3 Nights",
     "durationNights": 3,
-    "basePrice": 160,
+    "basePricePerNight": 160,
     "transferPricePerPerson": 20,
     "excursions": [
       {"id": "exc-11", "name": "Goreme Open Air Museum Guide", "price": 40},
@@ -329,7 +333,7 @@
     "rating": 5.0,
     "durationText": "8 Days / 7 Nights",
     "durationNights": 7,
-    "basePrice": 195,
+    "basePricePerNight": 195,
     "transferPricePerPerson": 50,
     "excursions": [
       {"id": "exc-13", "name": "Katla Ice Cave Super Jeep Tour", "price": 130},
@@ -346,7 +350,7 @@
     "rating": 4.7,
     "durationText": "5 Days / 4 Nights",
     "durationNights": 4,
-    "basePrice": 110,
+    "basePricePerNight": 110,
     "transferPricePerPerson": 30,
     "excursions": [
       {"id": "exc-15", "name": "Sandboarding in High Dunes", "price": 25},
